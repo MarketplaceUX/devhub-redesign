@@ -1,4 +1,4 @@
 FirefoxMarketplaceDevPagesDesign
 ================================
 
-Design documentation for the Firefox Marketplace 
+Design documentation for the Firefox Marketplace Developer Pages
