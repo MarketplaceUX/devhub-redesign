@@ -12,9 +12,8 @@ Design documentation for the Firefox Marketplace Developer Pages - In progress
 #### And so on
 
 
-## Table of Contents for this Branch
+## [See to the UX Spec][3]
 
-#### [See to the UX Spec][3]
 
 
 [1]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSub_CountryPricePayment/index.md
