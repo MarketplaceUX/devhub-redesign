@@ -1,60 +1,64 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-		<!-- Use absolute URLs to link to internal pages, css, images, js, etc -->
-		<link rel="stylesheet" href="http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/stylesheets/templateStyles.css">
-	</head>
-	<body>
-		<div id="wrapper" style="border:1px solid red;">
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../stylesheets/templateStyles.css">
+</head>
+<body>
 
-			<header id="header">
-			<!--
-			The header HTML is maintained in the /includes/header.html file. Do NOT remove the <header id="header"> tag above or the </header> tag below from this file. The script that includes the header HTML is included at the bottom of this page.
-			-->
-			</header>
+<div id="wrapper">
+	<header id="header-inc"><!-- HTML is inserted here from /includes/header.html --></header>
+	
 
-			
-			<div id="content">
-				<div class="jumbotron">
-					<div class="container">
-						<h1>Test template project</h1>
-						<p>This is the test template for the Marketplace UX design specs. There is much randomly generated content in these pages, do explore. #tharBeDragons</p>
-						<!-- Pagination. If you have more than one page, uncomment this and add <li>s for each page. Make sure to update your prev and last (the first and last <li>s in the group) with the correct url on each page. Add class="active" to the <li> you want to be active. Add class="disabled" to the <li> if you want to disable it.
-						-->
-						<!--
-						<div class="row"> 
-							<ul class="pagination col-sm-6 col-md-4 col-lg-4">
-								<li class="disabled"><a href="#">&laquo;</a></li>
-								<li class="active"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">&raquo;</a></li>
-							</ul>
-						</div>
-						-->
+
+
+<!-- START EDITING HERE -->
+	<div id="content">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="thumbnail">
+							<img data-src="holder.js/1100x500" alt="thumbnail image, replace this alt text"/>
+						<h3>Thumbnail 01</h3>
+						<p>
+							Blog gentrify +1 8-bit deep v Truffaut. PBR yr Echo Park hashtag Blue Bottle. Ethical cardigan cred, Marfa selvage banjo iPhone. Fap authentic Marfa Carles Godard slow-carb. Literally brunch Neutra messenger bag aesthetic gastropub organic Etsy, mlkshk ethnic ennui slow-carb. Gastropub narwhal distillery street art, pork belly Odd Future fashion axe artisan tattooed raw denim. Plaid kitsch Brooklyn fap dreamcatcher.
+						</p>
 					</div>
 				</div>
+			</div><!-- end content .row -->
+
+			<!-- Pagination. If you have more than one page, uncomment this and add <li>s for each page. Make sure to update your prev and last (the first and last <li>s in the group) with the correct url on each page. Add class="active" to the <li> you want to be active. Add class="disabled" to the <li> if you want to disable it.
+			-->
+			<!--
+			<div class="row"> 
+				<ul class="pagination col-sm-6 col-md-4 col-lg-4">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
 			</div>
-		</div><!-- end wrapper -->
+			--><!-- end pagination .row -->
+
+		</div>
+	</div> 
+<!-- STOP EDITING HERE -->
 
 
-		<footer id="footer">
-		<!--
-		The footer HTML is maintained in the /includes/footer.html file. Do NOT remove the <footer id="footer"> tag above or the </footer> tag below from this file. The script that includes the footer HTML is included at the bottom of this page.
-		-->
-		</footer>
+
+
+	<footer id="footer-inc"><!-- HTML is inserted here from /includes/footer.html --></footer>
+
+</div><!-- end / #wrapper -->
 
 <!-- scripts -->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script> 
-$(function(){
-$("#header").load("http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/includes/header.html"); 
-$("#footer").load("http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/includes/footer.html"); 
-});
-</script>
+<script src="../javascripts/holder.js"></script>
+<script src="../javascripts/application.js"></script>
 
-	</body>
+</body>
 </html>

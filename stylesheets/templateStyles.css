@@ -25,6 +25,11 @@ body{
 	background-position: center center; 
 }
 
+.navbar-header {
+	/* Added to fix bottom padding on header for non-mobile */
+	height: 54px;
+}
+
 .navbar-marketplace{
 	background-color: #fff;
 	border-bottom: 1px solid #D7D7D7;
