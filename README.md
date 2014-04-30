@@ -1,4 +1,6 @@
-FirefoxMarketplaceDevPagesDesign
-================================
+App Submission Flow - Country / Pricing / Payment
+=================================================
 
-Design documentation for the Firefox Marketplace Developer Pages
+The files in this branch make up the front-facing [UX Spec for this project][1].
+
+[1] http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign
