@@ -5,6 +5,8 @@ Design documentation for the Firefox Marketplace Developer Pages - In progress
 
 ## Table of Contents for this Branch
 
+Note: This branch contains working files that support the UX Spec.
+
 #### [App Submission Flow - Country / Price / Payments][1]
 
 #### [Something from Bram][2]
