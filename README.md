@@ -12,7 +12,7 @@ Design documentation for the Firefox Marketplace Developer Pages - In progress
 #### And so on
 
 
-## [See to the UX Spec][3]
+## [See the UX Spec][3]
 
 
 
