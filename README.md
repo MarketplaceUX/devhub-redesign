@@ -1,19 +1,24 @@
 FirefoxMarketplaceDevPagesDesign
 ================================
 
-Design documentation for the Firefox Marketplace Developer Pages
+Design documentation for the Firefox Marketplace Developer Pages - In progress
 
-## Table of Contents
+## Table of Contents for this Branch
 
-### [App Submission Flow - Country / Price / Payments][1]
+#### [App Submission Flow - Country / Price / Payments][1]
 
-### [Something from Bram][2]
+#### [Something from Bram][2]
 
-### And so on
+#### And so on
 
 
+## Table of Contents for this Branch
+
+#### [See to the UX Spec][3]
 
 
 [1]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSub_CountryPricePayment/index.md
 
 [2]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/BramFolder/index.md
+
+[3]: http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign
