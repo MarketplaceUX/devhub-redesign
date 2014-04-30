@@ -27,7 +27,15 @@ body{
 
 .navbar-header {
 	/* Added to fix bottom padding on header for non-mobile */
-	height: 54px;
+	height: 50px;
+}
+/* Added to create non-href project title */
+.navbar-nav>li.project-title {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .navbar-marketplace{
