@@ -1,13 +1,13 @@
 FirefoxMarketplaceDevPagesDesign
 ================================
 
-##App Submission Flow - Countries/Pricing/Payments
-
-This file is a TOC of the working files in this directory.
+Working files for the Country/Price/Payment portion of this project.
 
 
-### Prototype Files
-**[Choose Country/Price/Payments][1]**
-* This file is work in progress and represents a piece of the App Submission Flow dealing with Availability, Pricing, and Payment Providers. The tab interfaces for more complex scenarios (e.g., Availability by Carrier) aren't done yet.
+## Working Files Table of Contents
 
-[1]: http://cbwmwo.axshare.com "Go to AxShare"
+#### App Submission - Country / Price / Payments - Axure file
+
+#### App Submission Flow - Axure file
+
+
