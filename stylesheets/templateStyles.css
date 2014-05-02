@@ -103,12 +103,16 @@ ol li span{
 	color: black;
 	font-weight: normal;
 }
-.img-padding {
+.override-img-padding {
 	padding: 9px;
 }
-img.override-thumb-img-left {
+.override-thumb-img-left {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
 }
-
-
+.override-pagination-padding {
+	margin-top: 0px;
+}
+.override-thumbnail {
+	padding: 16px;
+}
