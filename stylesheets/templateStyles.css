@@ -92,3 +92,23 @@ footer p{
 	padding-left: 5px;
 	font-size: .9em;
 }
+
+
+/* MISC FORMATTING STYLES */
+ol li {
+	color: red;
+	font-weight: bold;
+}
+ol li span{
+	color: black;
+	font-weight: normal;
+}
+.img-padding {
+	padding: 9px;
+}
+img.override-thumb-img-left {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+
