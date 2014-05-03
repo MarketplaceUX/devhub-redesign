@@ -95,13 +95,23 @@ footer p{
 
 
 /* MISC FORMATTING STYLES */
-ol li {
+ol.notes-list li {
 	color: red;
 	font-weight: bold;
 }
-ol li span{
+ol.notes-list li span{
 	color: black;
 	font-weight: normal;
+}
+ol.stories {
+	font-size: 16px;
+	line-height: 140%;
+}
+ol.stories li {
+	margin-bottom: 24px;
+}
+ol li {
+	margin-bottom: 6px;
 }
 .override-img-padding {
 	padding: 9px;
