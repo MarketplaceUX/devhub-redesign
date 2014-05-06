@@ -11,11 +11,9 @@ Design documentation for the Firefox Marketplace Developer Pages
 
 #### [App Submission Flow - Country / Price / Payments][2]
 
-#### [Something from Bram][3]
+#### [App Submission Flow - Managing Versions][3]
 
 #### And so on
-
-testing
 
 
 
@@ -26,6 +24,6 @@ testing
 
 [2]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSub_CountryPricePayment/index.md
 
-[3]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/BramFolder/index.md
+[3]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSubmissionEditFlow/index.md
 
 
