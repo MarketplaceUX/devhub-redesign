@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"7c_in-app_product.html",
-  "generationDate":new Date(1399021343921.5),
+  "generationDate":new Date(1399363408946.08),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable",
 "name"],

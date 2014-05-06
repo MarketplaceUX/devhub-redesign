@@ -1,13 +1,13 @@
 ﻿$axure.loadCurrentPage({
-  "url":"10_general_information__edit.html",
-  "generationDate":new Date(1399021346137.43),
+  "url":"11_edit__general_information.html",
+  "generationDate":new Date(1399363416274.09),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable",
 "name"],
   "page":{
     "packageId":"0544ab8c630d40549bf6a44ec8aa7863",
     "type":"Axure:Page",
-    "name":"10 general information, edit",
+    "name":"11 edit, general information",
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",
@@ -170,7 +170,7 @@
               "y":170},
             "size":{
               "width":220,
-              "height":240},
+              "height":280},
             "borderWidth":"-1",
             "borderFill":{
               "fillType":"solid",
@@ -195,7 +195,7 @@
                   "y":170},
                 "size":{
                   "width":220,
-                  "height":240},
+                  "height":280},
                 "borderWidth":"-1",
                 "borderFill":{
                   "fillType":"solid",
@@ -205,7 +205,7 @@
               "adaptiveStyles":{
 }}],
           "images":{
-            "normal~":"images/10_general_information__edit/u6.png"}},
+            "normal~":"images/10a_edit__manifest__version___publishing/u12.png"}},
 {
           "id":"bff436f653a7455c835b87b0a41c7e28",
           "label":"",
@@ -215,7 +215,7 @@
           "style":{
             "location":{
               "x":80,
-              "y":170},
+              "y":210},
             "size":{
               "width":220,
               "height":40},
@@ -223,8 +223,7 @@
             "borderFill":{
               "fillType":"solid",
               "color":0xFFFFFF},
-            "linePattern":"none",
-            "cornerRadiusTopLeft":"10"},
+            "linePattern":"none"},
           "adaptiveStyles":{
 },
           "objects":[{
@@ -237,7 +236,7 @@
               "style":{
                 "location":{
                   "x":80,
-                  "y":170},
+                  "y":210},
                 "size":{
                   "width":220,
                   "height":40},
@@ -245,12 +244,11 @@
                 "borderFill":{
                   "fillType":"solid",
                   "color":0xFFFFFF},
-                "linePattern":"none",
-                "cornerRadiusTopLeft":"10"},
+                "linePattern":"none"},
               "adaptiveStyles":{
 }}],
           "images":{
-            "normal~":"images/1_upload_manifest/u8.png"}},
+            "normal~":"images/2a_screenshot/u122.png"}},
 {
           "id":"7335ad87e3c5460b8ba73777abf2afbe",
           "label":"",
@@ -261,7 +259,7 @@
             "fontName":"'FiraSans', 'Fira Sans'",
             "location":{
               "x":95,
-              "y":180},
+              "y":220},
             "size":{
               "width":122,
               "height":21}},
@@ -278,7 +276,7 @@
                 "fontName":"'FiraSans', 'Fira Sans'",
                 "location":{
                   "x":95,
-                  "y":180},
+                  "y":220},
                 "size":{
                   "width":122,
                   "height":21}},
@@ -296,7 +294,7 @@
             "fontName":"'FiraSans', 'Fira Sans'",
             "location":{
               "x":95,
-              "y":220},
+              "y":260},
             "size":{
               "width":64,
               "height":21}},
@@ -313,7 +311,7 @@
                 "fontName":"'FiraSans', 'Fira Sans'",
                 "location":{
                   "x":95,
-                  "y":220},
+                  "y":260},
                 "size":{
                   "width":64,
                   "height":21}},
@@ -327,10 +325,10 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"linkWindow",
-                      "description":"Open 11 categories, edit in Current Window",
+                      "description":"Open 12 edit, categories in Current Window",
                       "target":{
                         "targetType":"page",
-                        "url":"11_categories__edit.html",
+                        "url":"12_edit__categories.html",
                         "includeVariables":true},
                       "linkType":"current"}]}]}},
           "tabbable":true,
@@ -346,7 +344,7 @@
             "fontName":"'FiraSans', 'Fira Sans'",
             "location":{
               "x":95,
-              "y":260},
+              "y":300},
             "size":{
               "width":133,
               "height":21}},
@@ -363,7 +361,7 @@
                 "fontName":"'FiraSans', 'Fira Sans'",
                 "location":{
                   "x":95,
-                  "y":260},
+                  "y":300},
                 "size":{
                   "width":133,
                   "height":21}},
@@ -381,7 +379,7 @@
             "fontName":"'FiraSans', 'Fira Sans'",
             "location":{
               "x":95,
-              "y":300},
+              "y":340},
             "size":{
               "width":91,
               "height":21}},
@@ -398,7 +396,7 @@
                 "fontName":"'FiraSans', 'Fira Sans'",
                 "location":{
                   "x":95,
-                  "y":300},
+                  "y":340},
                 "size":{
                   "width":91,
                   "height":21}},
@@ -416,7 +414,7 @@
             "fontName":"'FiraSans', 'Fira Sans'",
             "location":{
               "x":95,
-              "y":380},
+              "y":420},
             "size":{
               "width":128,
               "height":21}},
@@ -433,7 +431,7 @@
                 "fontName":"'FiraSans', 'Fira Sans'",
                 "location":{
                   "x":95,
-                  "y":380},
+                  "y":420},
                 "size":{
                   "width":128,
                   "height":21}},
@@ -451,7 +449,7 @@
             "fontName":"'FiraSans', 'Fira Sans'",
             "location":{
               "x":95,
-              "y":340},
+              "y":380},
             "size":{
               "width":46,
               "height":21}},
@@ -468,7 +466,7 @@
                 "fontName":"'FiraSans', 'Fira Sans'",
                 "location":{
                   "x":95,
-                  "y":340},
+                  "y":380},
                 "size":{
                   "width":46,
                   "height":21}},
@@ -1867,7 +1865,7 @@
               "adaptiveStyles":{
 }}],
           "images":{
-            "normal~":"images/2c_support_email/u114.png"}},
+            "normal~":"images/2c_support_email/u113.png"}},
 {
           "id":"13ab04ff82034bf4bc458e9d35236a0d",
           "label":"",
@@ -1940,7 +1938,7 @@
               "adaptiveStyles":{
 }}],
           "images":{
-            "normal~":"images/2c_support_email/u114.png"}},
+            "normal~":"images/2c_support_email/u113.png"}},
 {
           "id":"f1df774624c54a558fc38453d08cd0dd",
           "label":"",
@@ -2013,7 +2011,7 @@
               "adaptiveStyles":{
 }}],
           "images":{
-            "normal~":"images/2c_support_email/u114.png"}},
+            "normal~":"images/2c_support_email/u113.png"}},
 {
           "id":"6259e95ae39644ba8a921602e7772e1b",
           "label":"",
@@ -2086,7 +2084,7 @@
               "adaptiveStyles":{
 }}],
           "images":{
-            "normal~":"images/2c_support_email/u114.png"}},
+            "normal~":"images/2c_support_email/u113.png"}},
 {
           "id":"dcf4a8bb1f4c4e2db438b6da7840365f",
           "label":"",
@@ -2099,7 +2097,7 @@
               "x":80,
               "y":30},
             "size":{
-              "width":219,
+              "width":300,
               "height":21}},
           "adaptiveStyles":{
 },
@@ -2116,7 +2114,7 @@
                   "x":80,
                   "y":30},
                 "size":{
-                  "width":219,
+                  "width":300,
                   "height":21}},
               "adaptiveStyles":{
 }}],
@@ -2132,6 +2130,56 @@
                       "target":{
                         "targetType":"page",
                         "url":"9_my_submissions.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"15ea49f0fdf948b4a0107c2b024727ac",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'FiraSans', 'Fira Sans'",
+            "location":{
+              "x":95,
+              "y":180},
+            "size":{
+              "width":183,
+              "height":21}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"4e69d2e95adb436fb5ec34e97cb67229",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'FiraSans', 'Fira Sans'",
+                "location":{
+                  "x":95,
+                  "y":180},
+                "size":{
+                  "width":183,
+                  "height":21}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open 10a edit, manifest, version &amp; publishing in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"10a_edit__manifest__version___publishing.html",
                         "includeVariables":true},
                       "linkType":"current"}]}]}},
           "tabbable":true,
@@ -2325,4 +2373,8 @@
     "dcf4a8bb1f4c4e2db438b6da7840365f":{
       "scriptId":"u91"},
     "2a5db72964874b948024402d05217ace":{
-      "scriptId":"u92"}}});
+      "scriptId":"u92"},
+    "15ea49f0fdf948b4a0107c2b024727ac":{
+      "scriptId":"u93"},
+    "4e69d2e95adb436fb5ec34e97cb67229":{
+      "scriptId":"u94"}}});

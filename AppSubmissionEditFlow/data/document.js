@@ -77,13 +77,45 @@
         "type":"Wireframe",
         "url":"9_my_submissions.html"},
 {
-        "pageName":"10 general information, edit",
+        "pageName":"10a edit, manifest, version & publishing",
         "type":"Wireframe",
-        "url":"10_general_information__edit.html"},
+        "url":"10a_edit__manifest__version___publishing.html"},
 {
-        "pageName":"11 categories, edit",
+        "pageName":"10b submitted",
         "type":"Wireframe",
-        "url":"11_categories__edit.html"}]},
+        "url":"10b_submitted.html"},
+{
+        "pageName":"10b rejected",
+        "type":"Wireframe",
+        "url":"10b_rejected.html"},
+{
+        "pageName":"10c resubmitted",
+        "type":"Wireframe",
+        "url":"10c_resubmitted.html"},
+{
+        "pageName":"10d approved",
+        "type":"Wireframe",
+        "url":"10d_approved.html"},
+{
+        "pageName":"10e publish, then add new version",
+        "type":"Wireframe",
+        "url":"10e_publish__then_add_new_version.html"},
+{
+        "pageName":"10f new version added",
+        "type":"Wireframe",
+        "url":"10f_new_version_added.html"},
+{
+        "pageName":"10g new version submitted",
+        "type":"Wireframe",
+        "url":"10g_new_version_submitted.html"},
+{
+        "pageName":"11 edit, general information",
+        "type":"Wireframe",
+        "url":"11_edit__general_information.html"},
+{
+        "pageName":"12 edit, categories",
+        "type":"Wireframe",
+        "url":"12_edit__categories.html"}]},
   "globalVariables":{
     "onloadvariable":"",
     "name":""},

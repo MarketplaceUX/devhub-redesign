@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"4_technical_information.html",
-  "generationDate":new Date(1399021341527.33),
+  "generationDate":new Date(1399363405956.4),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable",
 "name"],
@@ -1287,7 +1287,7 @@
               "adaptiveStyles":{
 }}],
           "images":{
-            "normal~":"images/2d_ready_to_proceed/icon-tooltip_u61.png"}},
+            "normal~":"images/2d_ready_to_proceed/icon-tooltip_u60.png"}},
 {
           "id":"fc2c194a3a0140f88c850c289b600c7f",
           "label":"",

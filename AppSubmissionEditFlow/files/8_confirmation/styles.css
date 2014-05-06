@@ -1221,3 +1221,49 @@
   width:232px;
   white-space:nowrap;
 }
+#u101 {
+  position:absolute;
+  left:620px;
+  top:1290px;
+  width:122px;
+  height:63px;
+  font-family:'FiraSans', 'Fira Sans';
+  color:#FF0000;
+}
+#u101_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:122px;
+  height:63px;
+}
+#u102 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:122px;
+  white-space:nowrap;
+}
+#u103 {
+  position:absolute;
+  left:770px;
+  top:1298px;
+  width:100px;
+  height:84px;
+  font-family:'FiraSans', 'Fira Sans';
+  color:#FF0000;
+}
+#u103_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100px;
+  height:84px;
+}
+#u104 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100px;
+  white-space:nowrap;
+}

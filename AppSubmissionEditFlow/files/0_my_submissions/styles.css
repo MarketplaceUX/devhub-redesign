@@ -84,3 +84,49 @@
   width:129px;
   white-space:nowrap;
 }
+#u6 {
+  position:absolute;
+  left:80px;
+  top:80px;
+  width:920px;
+  height:65px;
+}
+#u6_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:920px;
+  height:65px;
+}
+#u7 {
+  position:absolute;
+  left:2px;
+  top:24px;
+  width:916px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u8 {
+  position:absolute;
+  left:100px;
+  top:100px;
+  width:37px;
+  height:24px;
+  font-family:'FiraSans', 'Fira Sans';
+  font-weight:400;
+  font-size:15px;
+}
+#u8_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:37px;
+  height:24px;
+}
+#u9 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:37px;
+  white-space:nowrap;
+}

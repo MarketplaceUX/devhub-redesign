@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"7d_payment_account.html",
-  "generationDate":new Date(1399021344407.67),
+  "generationDate":new Date(1399363409415.36),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable",
 "name"],

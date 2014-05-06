@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"6_ratings.html",
-  "generationDate":new Date(1399021342469.81),
+  "generationDate":new Date(1399363407399.04),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable",
 "name"],

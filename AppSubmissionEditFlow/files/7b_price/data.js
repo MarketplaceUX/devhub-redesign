@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"7b_price.html",
-  "generationDate":new Date(1399021343439.56),
+  "generationDate":new Date(1399363408443.32),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable",
 "name"],
