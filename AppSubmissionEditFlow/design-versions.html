@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../stylesheets/templateStyles.css">
+</head>
+<body>
+
+<div id="wrapper">
+	<header id="header-inc"><!-- HTML is inserted here from /includes/header.html --></header>
+		
+	<div id="content">
+		<div class="container">
+			<div class="col-sm-7 col-md-7 col-lg-7">add an image here
+				<!--a href="../img/countrypricepayment/design-pricing_1.png" target="_blank" title="Click for larger size"><img width="100%" src="../img/countrypricepayment/design-pricing_1.png" alt="App for Sale pricing"/></a-->
+			</div>
+			
+
+			<div class="col-sm-5 col-md-5 col-lg-5">
+
+
+
+
+<!-- START EDITING HERE -->					
+				<h3>Design Story: Manage App Versions.</h3>
+				<h5><a href="http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/AppSubmissionEditFlow/#p=9_my_submissions" target="_blank">See the prototype</a></h5>
+				<p class="longText"><b>User flow</b> - make a user flow diagram for this</p>
+
+				<p class="longText"><b>This story covers:</b>
+					<ol>
+						<li>Managing manifest and packaged .zip files</li>
+						<li>Managing versions (each version may have a new manifest or .zip file)</li>
+						<li>Managing publishing status.</li>
+					</ol>
+				</p>
+
+
+				<p class="longText">
+					<ol>
+						<li>Upload a new version of manifest. Add a release note if necessary.</li>
+						<li>Submit it. The review team will test the updated version and view the changelog.</li>
+						<li>When the app is approved, you can go to the App Details pages and modify the app’s screenshots, categories, details, etc. as needed. Remember: there’s only one detail page that’s shared for every version. But each version can have its own release note or packaged .zip file.</li>
+						<li>Finally, when you’re ready, go back to the Manifest, Version & Publishing page, and click Publish. You can remain in the old version for as long as you like, and you can control when it’s published.</li>
+					</ol> 
+				</p>
+				
+				<p class="longText"><b>Changelog</b>
+					<ol>
+						<li>The functionality of the Manage Versions and App Status pages are now combined and located under Edit App. This new page is called Manifest, Version & Publishing (name TBD). It will no longer appear under the Actions menu.</li>
+						<li>Consequently, the items under the Actions menu have become fewer. We have three: Edit App, User Reports and Analytics. If we don’t implement reports and analytics yet, we might even be able to dispense with the Actions menu entirely, which will simplify the navigation even more.</li>
+						<li>To Submit a new app, you would do it on the My Submissions page. And to Add a new version, you would do it under the Manifest, Version & Publishing page. Makes sense, right? The function is separated cleanly.</li>
+						<li>The process of adding a new version has been made simpler. Instead of taking you through the whole process from start to finish, we only have two fields that may change between one version and the next. These two fields are Manifest and Release Note.</li>
+					</ol>
+
+				</p>
+				
+
+
+			</div><!-- end content column -->
+			
+			<!-- Pagination. If you have more than one page, uncomment this and add <li>s for each page. Make sure to update your prev and last (the first and last <li>s in the group) with the correct url on each page. Add class="active" to the <li> you want to be active. Add class="disabled" to the <li> if you want to disable it.
+			-->
+			<!--
+			<div class="row"> 
+				<ul class="pagination col-sm-6 col-md-4 col-lg-4">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+			--><!-- end pagination .row -->
+<!-- STOP EDITING HERE - -->
+
+
+
+
+		</div>
+	</div> 
+
+	<footer id="footer-inc"><!-- HTML is inserted here from /includes/footer.html --></footer>
+
+</div><!-- end / #wrapper -->
+
+<!-- scripts -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="../javascripts/holder.js"></script>
+
+<!-- Function to include header/footer HTML files -->
+<script>
+$(function(){
+$("#header-inc").load("../includes/header-appsubeditflow.html");  
+$("#footer-inc").load("../includes/footer-internal.html"); 
+});
+</script>
+
+</body>
+</html>
