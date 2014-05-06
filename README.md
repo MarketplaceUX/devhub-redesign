@@ -7,7 +7,7 @@ Design documentation for the Firefox Marketplace Developer Pages
 ## See the in-progress [UX Spec][1].
 
 
-## Table of Contents
+## Working Files Folders
 
 #### [App Submission Flow - Country / Price / Payments][2]
 
