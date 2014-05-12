@@ -1,13 +1,14 @@
-FirefoxMarketplaceDevPagesDesign
-================================
+# Firefox Marketplace Developer Site Redesign
 
-Design documentation for the Firefox Marketplace Developer Pages
+To view the actual design documentation please visit the site at: 
+
+This branch is home to all the individual files used in the process of design (flow diagrams, prototypes, etc). 
+The redesign documentation itself lives in the [gh-pages branch](https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/tree/gh-pages)
+
+To view the in-progress document please visit: http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/
 
 
-## See the in-progress [UX Spec][1].
-
-
-## Working Files Folders
+## Working Files Folders in the branch
 
 #### [App Submission Flow - Country / Price / Payments][2]
 
@@ -15,12 +16,6 @@ Design documentation for the Firefox Marketplace Developer Pages
 
 #### And so on
 
-
-
-
-
-
-[1]: http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign
 
 [2]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSub_CountryPricePayment/index.md
 
