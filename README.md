@@ -1,12 +1,9 @@
 # Firefox Marketplace Developer Site Redesign
 
-To view the actual design documentation please visit the site at: 
+To view the actual design documentation please visit the site at: http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/
 
 This branch is home to all the individual files used in the process of design (flow diagrams, prototypes, etc). 
 The redesign documentation itself lives in the [gh-pages branch](https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/tree/gh-pages)
-
-To view the in-progress document please visit: http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/
-
 
 ## Working Files Folders in the branch
 
