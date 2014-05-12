@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Firefox Marketplace Developers Site Redesign 
 
 ## Description
@@ -21,3 +22,26 @@ This site is using Jekyll to ease the burden of updating shared components (like
   * everything else: named for the page title (e.g. designPrinciples.html)
 
 This is all still a work in progress so if you find a bug in it or come up with a better way to do any of this just let us all know and we can evolve the process. The goal of this hosting method is to allow the team to focus on creating content instead of presentation pages. 
+=======
+# Firefox Marketplace Developer Site Redesign
+
+To view the actual design documentation please visit the site at: http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/
+
+This branch is home to all the individual files used in the process of the redesign (flow diagrams, prototypes, etc).<br>
+The redesign documentation itself lives in the [gh-pages branch](https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/tree/gh-pages)
+
+## Working Files Folders in the branch
+
+#### [App Submission Flow - Country / Price / Payments][2]
+
+#### [App Submission Flow - Managing Versions][3]
+
+#### And so on
+
+
+[2]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSub_CountryPricePayment/index.md
+
+[3]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSubmissionEditFlow/index.md
+
+
+>>>>>>> 65414b90bf3aa9626344df2f2495460008b270ad
