@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../stylesheets/templateStyles.css">
+</head>
+<body>
+
+<div id="wrapper">
+	<header id="header-inc"><!-- HTML is inserted here from /includes/header.html --></header>
+		
+	<div id="content">
+		<div class="container">
+			<div class="col-sm-7 col-md-7 col-lg-7">add an image here
+				<!--a href="../img/countrypricepayment/design-pricing_1.png" target="_blank" title="Click for larger size"><img width="100%" src="../img/countrypricepayment/design-pricing_1.png" alt="App for Sale pricing"/></a-->
+			</div>
+			
+
+			<div class="col-sm-5 col-md-5 col-lg-5">
+
+
+
+
+<!-- START EDITING HERE -->					
+				<h3>Design Story: Manage App Versions</h3>
+				<h4><a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=9_my_submissions" target="_blank">See prototype</a></h4>
+				<h4><a href="../img/submissioneditflow/user-flows-versions-v1.0.png" target="_blank">See user flows</a></h4>
+
+				<h4>This design story covers <a href="user-versions.html">these user stories</a>:</h4>
+				<ol>
+					<li>Publishing an existing submission that’s been saved but not yet submitted for review</li>
+					<li>Resubmitting a version that’s been reviewed as either “rejected” or “more information needed”</li>
+					<li>Publishing a version that’s been reviewed as “approved”</li>
+					<li>Adding a new version of the manifest or packaged .zip file</li>
+				</ol>
+
+				<h4>User story 1: <small>I want to continue an existing submission that’s been saved but not yet submitted for review</small></h4>
+				<ol>
+					<li>Start on <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10a_edit__manifest__version___publishing" target="_blank">this page</a></li>
+					<li>We have an app (version 1.1.4) that we haven’t submitted for review yet. Click <em>Submit</em>.</li>
+					<li>The app moves to the <em>Submitted</em> bucket.</li>
+					<li>Let’s find out what we submitted. Mouse over the app version area to maximize it. If a reviewer hasn’t come back with a reply yet, you can’t change the manifest or the release note.</li>
+				</ol>
+				
+				<h4>User story 2: <small>I want to resubmit a version of my app and provide an explanation, if the review team comes back saying “rejected” or “more information needed”</small></h4>
+				<ol>
+					<li>Start on <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10a_edit__manifest__version___publishing" target="_blank">this page</a> and go to the next instruction. Alternatively, after following the direction on Story 1, click <em>Test: change to rejected</em>. This button simulates what would happen if the app gets rejected.</li>
+					<li>Our app comes back rejected. Now we can <em>Update Manifest URL</em> and tweak its <em>Release Note</em>.</li>
+					<li>Before you resubmit, you may want to fill out the <em>Reply</em> text box for the reviewer. Then click <em>Resubmit</em>.</li>
+					<li>The app’s been resubmitted. Remember: you can always maximize or minimize the version area.</li>				
+				</ol> 
+				
+				<h4>User story 3: <small>I want to publish a version of the app that has been reviewed as “approved”</small></h4>
+				<ol>
+					<li>Start on <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10d_approved" target="_blank">this page</a> and go to the next instruction. Alternatively, after following the direction on Story 1, click <em>Test: change to approved</em>. This button simulates what would happen if the app gets approved.</li>
+					<li>Our app is now approved. You can say some nice words to our reviewer. <em>Release Note</em> is locked because the app’s been approved.</li>
+					<li>Ready to publish the new version? Click <em>Publish</em>. Note how this item now moves under the <em>Currently Active</em> bucket.</li>			
+				</ol>			
+
+				<h4>User story 4: <small>I want to add a new version of the manifest or packaged file, and submit it for review</small></h4>
+				<ol>
+					<li>Start on <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10e_publish__then_add_new_version" target="_blank">this page</a> and go to the next instruction. Alternatively, after following the direction on Story 3, this page will automatically show up.</li>
+					<li>We want to publish a new version of the same app. Click the <em>Add a new version</em> button.</li>
+					<li>Copy and paste your manifest URL, then click <em>Validate</em>. If your app is a packaged app, then this field will tell you to upload a .zip file rather than copy–paste a URL.</li>
+					<li>After validating the file, note how the draft version now has a new version number and icon. This is done for demonstration purpose, to distinguish it from the old version. We are getting the new version number and icon from the manifest or the package .zip file.</li>
+					<li>Give it a spiffy <em>Release Note</em>. Then when you’re ready to submit this new version, click <em>Submit</em>.</li>
+				</ol>			
+
+			</div><!-- end content column -->
+			
+			<!-- Pagination. If you have more than one page, uncomment this and add <li>s for each page. Make sure to update your prev and last (the first and last <li>s in the group) with the correct url on each page. Add class="active" to the <li> you want to be active. Add class="disabled" to the <li> if you want to disable it.
+			-->
+			<!--
+			<div class="row"> 
+				<ul class="pagination col-sm-6 col-md-4 col-lg-4">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+			--><!-- end pagination .row -->
+<!-- STOP EDITING HERE - -->
+
+
+
+
+		</div>
+	</div> 
+
+	<footer id="footer-inc"><!-- HTML is inserted here from /includes/footer.html --></footer>
+
+</div><!-- end / #wrapper -->
+
+<!-- scripts -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="../javascripts/holder.js"></script>
+
+<!-- Function to include header/footer HTML files -->
+<script>
+$(function(){
+$("#header-inc").load("../includes/header-appsubeditflow.html");  
+$("#footer-inc").load("../includes/footer-internal.html"); 
+});
+</script>
+
+</body>
+</html>

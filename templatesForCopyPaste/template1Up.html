@@ -1,0 +1,23 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+---	
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div class="thumbnail">
+					<img data-src="holder.js/1100x500" alt="thumbnail image, replace this alt text"/>
+				<h3>Thumbnail 01</h3>
+				<p>
+					Blog gentrify +1 8-bit deep v Truffaut. PBR yr Echo Park hashtag Blue Bottle. Ethical cardigan cred, Marfa selvage banjo iPhone. Fap authentic Marfa Carles Godard slow-carb. Literally brunch Neutra messenger bag aesthetic gastropub organic Etsy, mlkshk ethnic ennui slow-carb. Gastropub narwhal distillery street art, pork belly Odd Future fashion axe artisan tattooed raw denim. Plaid kitsch Brooklyn fap dreamcatcher.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}

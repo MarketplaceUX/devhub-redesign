@@ -1,0 +1,16 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+---
+<div class="jumbotron">
+	<div class="container">
+		<h1>Test template project</h1>
+		<p>This is the test template for the Marketplace UX design specs. There is much randomly generated content in these pages, do explore. #tharBeDragons</p>
+		<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}
+	</div>
+</div>	

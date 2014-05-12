@@ -1,0 +1,61 @@
+---
+layout: MarketplaceUXSpec
+multipage: false
+---	
+
+<div class="container">
+	<h1>Information Architecture</h1>
+	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+		<h2>Top-level pages</h2>
+		<ol class="longText">
+			<li><b>My Submissions</b> - My Submissions is a page listing the user's apps. If no apps, just have the CTA to "Submit a New App." Could have a dropdown in topnav listing the user's apps for quick reference, but this isn't scalable...</li>
+			
+			<li><b>My Payment Accounts</b> - My Payment Accounts is a page listing the user's payment accounts.  Could have a dropdown in topnav listing the user's accounts for quick reference, but this isn't scalable... If no payment accounts, explain what they are and when you need them..</li>
+			<li><b>Tools</b> - There is no Tools "page." Just a dropdown in topnav listing API, Test Validation, Test Installation + Receipt Handling, and Test In-app Payments.</li>
+			<li><b>Support + Documentation</b> - There is no "help" page. Just click-through link from topnav that goes to MDN.</li>
+			<li><b>My Account</b> - Sign Out is a link in the My Account dropdown menu.</li>
+		</ol>
+		<h2>Section: My Payment Account</h2>
+		<ol class="longText">
+			<li><b>Edit a Payment Account</b> - edit a single account. Includes "delete" action.</li>
+		</ol>
+		<h2>Section: My Account</h2>
+		<ol class="longText">
+			<li><b>What's in this section?</b></li>
+		</ol>
+	</div>
+	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+		<h2>Section: My Submissions</h2>
+		<ol class="longText">
+			<li><b>Add/Edit App</b> - This is the same series of pages, though some are not available in edit mode.
+				<ol>
+					<li><b>Choose Screen Size</b> - Select from mobile, tablet, desktop, or all. Choice is required before proceeding.</li>
+
+					<li><b>Choose Platform</b> - FFOS is required, so other platforms are in addition to FFOS. Show that FFOS is the main platform and allow user to add (checkbox) others. Android is the only other platform at this time. In prototype, show a couple other GenericPlatforms just to show that this is the future plan. This step is required, but user is not required to choose additional platforms. After this user goes to Upload Manifest page.</li>
+					<li><b>Upload Manifest</b> - only available when creating an app.</li>
+			
+					<li><b>Manifest, Version &amp; Publishing</b> - only available when editing an app. A page listing all versions for a single app. Allows user to promote a version and delete a version. The Add Version link <i>does not</i> lead into the Add/Edit App flow. Instead, it becomes a greatly simplified process that involves 1) uploading a new manifest or .zip file, 2) updating Release Note, and 3) replying to the reviewer if necessary. This process happens inline, on the same page.</li>
+					<li><b>Add/Edit General Information</b> - includes all the app details stuff.</li>
+					<li><b>Add/Edit Categories</b></li>
+					<li><b>Add/Edit Technical Information</b></li>
+					<li><b>Add/Edit Team Members</b></li>
+					<li><b>Add/Edit Content Rating</b></li>
+					<li><b>Add/Edit Availability and Pricing</b>
+						<ol>
+							<li><b>Add/Edit App Availability</b></li>
+							<li><b>Add/Edit App Pricing</b> - includes In-app Purchases as part of this "page."</li>
+							<li><b>Add/Edit Payment Account</b> - Available only if user selects a pricing option requring a payment provider.</li>
+						</ol>
+					</li>
+				</ol>
+			</li>				
+			<li><b>User Feedback</b> - if available. What does this look like?</li>
+			<li><b>Analytics</b> - if available. What does this look like?</li>
+		</ol>
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}

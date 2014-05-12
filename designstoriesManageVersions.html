@@ -1,0 +1,86 @@
+---
+layout: MarketplaceUXSpec
+multipage: false
+---	
+
+<div class="container">
+	<div class="row">
+		<h1 class="col=sm-12 col-md-12 col-lg-12">Design Story: Manage app versions</h1>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-sm-4 col-md-4 col-lg-5">
+			<div class="thumbnail">
+					<!-- hidden on XS displays aka phones -->
+					<a href="#" data-toggle="modal" data-target="#thumb1Modal" class="hidden-xs">
+						<img data-src="holder.js/430x500" alt="thumbnail image, replace this alt text"/>
+					</a>
+					<!-- for use on XS displays aka phones -->
+					<a href="holder.js/1024x600" class="visible-xs">
+						<img data-src="holder.js/430x500" alt="thumbnail image, replace this alt text"/>
+					</a>
+					<h4><a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=9_my_submissions" target="_blank">See the prototype</a></h4>
+				</div>
+			</div>
+			<!-- modal for full-size view of image in thumbnail number 1 -->
+			<div class="modal fade" id="thumb1Modal" tabindex="-1" role="dialog" aria-labelledby="thumbnail1Modal" aria-describeby="A modal window to show a fullsized image for thumbnail number one" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4>Thumbnail number 1 full-size</h4>
+						</div>
+						<div class="modal-body">
+							<img data-src="holder.js/1024x600" alt="Full size image number 1. Replace this alt text"/>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="col-sm-8 col-md-8 col-lg-7 ">
+			<h4>This design story covers</h4>
+				<ol>
+					<li>Publishing an existing submission that's been saved but not yet submitted for review</li>
+					<li>Resubmitting a version that's been reviewed as either "rejected" or "more information needed"</li>
+					<li>Publishing a version that's been reviewed as "approved"</li>
+					<li>Adding a new version of the manifest or packaged .zip file</li>
+				</ol>
+
+				<h4>User story 1: <small>I want to continue an existing submission that’s been saved but not yet submitted for review</small></h4>
+				<ol>
+					<li>Start on <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10a_edit__manifest__version___publishing" target="_blank">this page</a></li>
+					<li>We have an app (version 1.1.4) that we haven't submitted for review yet. Click <em>Submit</em>.</li>
+					<li>The app moves to the <em>Submitted</em> bucket.</li>
+					<li>Let's find out what we submitted. Mouse over the app version area to maximize it. If a reviewer hasn't come back with a reply yet, you can't change the manifest or the release note.</li>
+				</ol>
+				
+				<h4>User story 2: <small>I want to resubmit a version of my app and provide an explanation, if the review team comes back saying "rejected" or "more information needed"</small></h4>
+				<ol>
+					<li>Start on <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10a_edit__manifest__version___publishing" target="_blank">this page</a> and go to the next instruction. Alternatively, after following the direction on Story 1, click <em>Test: change to rejected</em>. This button simulates what would happen if the app gets rejected.</li>
+					<li>Our app comes back rejected. Now we can <em>Update Manifest URL</em> and tweak its <em>Release Note</em>.</li>
+					<li>Before you resubmit, you may want to fill out the <em>Reply</em> text box for the reviewer. Then click <em>Resubmit</em>.</li>
+					<li>The app's been resubmitted. Remember: you can always maximize or minimize the version area.</li>				
+				</ol> 
+				
+				<h4>User story 3: <small>I want to publish a version of the app that has been reviewed as "approved"</small></h4>
+				<ol>
+					<li>Start on <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10d_approved" target="_blank">this page</a> and go to the next instruction. Alternatively, after following the direction on Story 1, click <em>Test: change to approved</em>. This button simulates what would happen if the app gets approved.</li>
+					<li>Our app is now approved. You can say some nice words to our reviewer. <em>Release Note</em> is locked because the app's been approved.</li>
+					<li>Ready to publish the new version? Click <em>Publish</em>. Note how this item now moves under the <em>Currently Active</em> bucket.</li>			
+				</ol>			
+
+				<h4>User story 4: <small>I want to add a new version of the manifest or packaged file, and submit it for review</small></h4>
+				<ol>
+					<li>Start on <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10e_publish__then_add_new_version" target="_blank">this page</a> and go to the next instruction. Alternatively, after following the direction on Story 3, this page will automatically show up.</li>
+					<li>We want to publish a new version of the same app. Click the <em>Add a new version</em> button.</li>
+					<li>Copy and paste your manifest URL, then click <em>Validate</em>. If your app is a packaged app, then this field will tell you to upload a .zip file rather than copy-paste a URL.</li>
+					<li>After validating the file, note how the draft version now has a new version number and icon. This is done for demonstration purpose, to distinguish it from the old version. We are getting the new version number and icon from the manifest or the package .zip file.</li>
+					<li>Give it a spiffy <em>Release Note</em>. Then when you're ready to submit this new version, click <em>Submit</em>.</li>
+				</ol>		
+		</div>
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}

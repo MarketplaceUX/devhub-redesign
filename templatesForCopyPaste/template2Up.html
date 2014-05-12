@@ -1,0 +1,82 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+---	
+
+<div class="container">
+	<div class="row">
+	<!-- Thumbnail number 1 
+	 !!Important!! Make sure to update the href for the direct link to the image for XS displays
+	-->
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<div class="thumbnail">
+				<!-- hidden on XS displays aka phones -->
+				<a href="#" data-toggle="modal" data-target="#thumb1Modal" class="hidden-xs">
+					<img data-src="holder.js/540x400" alt="thumbnail image, replace this alt text"/>
+				</a>
+				<!-- for use on XS displays aka phones -->
+				<a href="holder.js/1024x600" class="visible-xs">
+					<img data-src="holder.js/350x300" alt="thumbnail image, replace this alt text"/>
+				</a>
+				<h3>Thumbnail 01</h3>
+				<p>
+					Blog gentrify +1 8-bit deep v Truffaut. PBR yr Echo Park hashtag Blue Bottle. Ethical cardigan cred, Marfa selvage banjo iPhone. Fap authentic Marfa Carles Godard slow-carb. Literally brunch Neutra messenger bag aesthetic gastropub organic Etsy, mlkshk ethnic ennui slow-carb. Gastropub narwhal distillery street art, pork belly Odd Future fashion axe artisan tattooed raw denim. Plaid kitsch Brooklyn fap dreamcatcher.
+				</p>
+			</div>
+		</div>
+		<!-- modal for full-size view of image in thumbnail number 1 -->
+		<div class="modal fade" id="thumb1Modal" tabindex="-1" role="dialog" aria-labelledby="thumbnail1Modal" aria-describeby="A modal window to show a fullsized image for thumbnail number one" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4>Thumbnail number 1 full-size</h4>
+					</div>
+					<div class="modal-body">
+						<img data-src="holder.js/1024x600" alt="Full size image number 1. Replace this alt text"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- end Thumbnail number 1 -->
+	<!-- Thumbnail number 2 
+	 !!Important!! Make sure to update the href for the direct link to the image for XS displays
+	-->
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<div class="thumbnail">
+				<!-- hidden on XS displays aka phones -->
+				<a href="#" data-toggle="modal" data-target="#thumb2Modal">
+					<img data-src="holder.js/540x400" alt="thumbnail image, replace this alt text"/>
+				</a>
+				<!-- for use on XS displays aka phones -->
+				<a href="holder.js/1024x600" class="visible-xs">
+					<img data-src="holder.js/350x300" alt="thumbnail image, replace this alt text"/>
+				</a>
+				<h3>Thumbnail 02</h3>
+				<p>
+					Blog gentrify +1 8-bit deep v Truffaut. PBR yr Echo Park hashtag Blue Bottle. Ethical cardigan cred, Marfa selvage banjo iPhone. Fap authentic Marfa Carles Godard slow-carb. Literally brunch Neutra messenger bag aesthetic gastropub organic Etsy, mlkshk ethnic ennui slow-carb. Gastropub narwhal distillery street art, pork belly Odd Future fashion axe artisan tattooed raw denim. Plaid kitsch Brooklyn fap dreamcatcher.
+				</p>
+			</div>
+		</div>
+		<!-- modal for full-size view of image in thumbnail number 1 -->
+		<div class="modal fade" id="thumb2Modal" tabindex="-1" role="dialog" aria-labelledby="thumbnail2Modal" aria-describeby="A modal window to show a fullsized image for thumbnail number two" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4>Thumbnail number 2 full-size</h4>
+					</div>
+					<div class="modal-body">
+						<img data-src="holder.js/1024x600" alt="Full size image number 2. Replace this alt text"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- end Thumbnail number 2 -->
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}

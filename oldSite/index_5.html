@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/templateStyles.css">
+</head>
+<body>
+
+<div id="wrapper">
+	<header id="header-inc"><!-- HTML is inserted here from /includes/header.html --></header>
+	
+
+
+
+<!-- START EDITING HERE -->
+	<div id="content">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					
+					<h1>Dev Pages Design - Project Overview</h1>
+
+					<ul class="pagination pull-right override-pagination-padding">
+						<li><a href="index_4.html">&laquo;</a></li>
+						<li><a href="index.html">1</a></li>
+						<li><a href="index_2.html">2</a></li>
+						<li><a href="index_3.html">3</a></li>
+						<li><a href="index_4.html">4</a></li>
+						<li class="active"><a href="index_5.html">5</a></li>
+						<li class="disabled"><a href="#">&raquo;</a></li>
+					</ul>
+					
+					<div class="clearfix"></div>
+
+					<div class="thumbnail override-thumbnail">
+						
+						<h3>Information Architecture</h3>
+
+						<p>
+							In Progress
+						</p>
+
+						<hr>
+						
+						<h4>Top-level pages</h4>
+
+						<ol>
+							<li><b>My Submissions</b> - My Submissions is a page listing the user's apps. If no apps, just have the CTA to "Submit a New App." Could have a dropdown in topnav listing the user's apps for quick reference, but this isn't scalable...
+							</li>
+							
+							<li><b>My Payment Accounts</b> - My Payment Accounts is a page listing the user's payment accounts.  Could have a dropdown in topnav listing the user's accounts for quick reference, but this isn't scalable... If no payment accounts, explain what they are and when you need them..
+							</li>
+							
+							<li><b>Tools</b> - There is no Tools "page." Just a dropdown in topnav listing API, Test Validation, Test Installation + Receipt Handling, and Test In-app Payments.
+							</li>
+							
+							<li><b>Support + Documentation</b> - There is no "help" page. Just click-through link from topnav that goes to MDN.
+							</li>
+							
+							<li><b>My Account</b> - Sign Out is a link in the My Account dropdown menu.
+							</li>
+						</ol>
+
+						<hr>
+
+						<h4>Section: My Submissions</h4>
+
+						<ol>
+							<li><b>Add/Edit App</b> - This is the same series of pages, though some are not available in edit mode.
+								<ol>
+									<li><b>Choose Screen Size</b> - Select from mobile, tablet, desktop, or all. Choice is required before proceeding.
+									</li>
+
+									<li><b>Choose Platform</b> - FFOS is required, so other platforms are in addition to FFOS. Show that FFOS is the main platform and allow user to add (checkbox) others. Android is the only other platform at this time. In prototype, show a couple other GenericPlatforms just to show that this is the future plan. This step is required, but user is not required to choose additional platforms. After this user goes to Upload Manifest page.
+									</li>
+
+
+									<li><b>Upload Manifest</b> - only available when creating an app.
+									</li>
+									
+									<li><b>Manifest, Version & Publishing</b> - only available when editing an app. A page listing all versions for a single app. Allows user to promote a version and delete a version. The Add Version link <i>does not</i> lead into the Add/Edit App flow. Instead, it becomes a greatly simplified process that involves 1) uploading a new manifest or .zip file, 2) updating Release Note, and 3) replying to the reviewer if necessary. This process happens inline, on the same page.
+									</li>
+
+									<li><b>Add/Edit General Information</b> - includes all the app details stuff.
+									</li>
+
+									<li><b>Add/Edit Categories</b>
+									</li>
+
+									<li><b>Add/Edit Technical Information</b>
+									</li>
+
+									<li><b>Add/Edit Team Members</b>
+									</li>
+
+									<li><b>Add/Edit Content Rating</b>
+									</li>
+
+									<li><b>Add/Edit Availability and Pricing</b>
+										<ol>
+											<li><b>Add/Edit App Availability</b>
+											</li>
+											<li><b>Add/Edit App Pricing</b> - includes In-app Purchases as part of this "page."
+											</li>
+											<li><b>Add/Edit Payment Account</b> - Available only if user selects a pricing option requring a payment provider.
+											</li>
+										</ol>
+									</li>
+
+								</ol>
+							</li>
+							
+							<li><b>User Feedback</b> - if available. What does this look like?
+							</li>
+							
+							<li><b>Analytics</b> - if available. What does this look like?
+							</li>
+						</ol>
+
+						<hr>
+
+						<h4>Section: My Payment Accounts</h4>
+
+						<ol>
+							<li><b>Edit a Payment Account</b> - edit a single account. Includes "delete" action.
+							</li>
+						</ol>
+
+						<hr>
+
+						<h4>Section: My Account</h4>
+
+						<ol>
+							<li><b>What's in this section?</b>
+							</li>
+						</ol>							
+
+
+
+					</div>
+				</div>
+			</div><!-- end content .row -->
+
+			<!-- Pagination. If you have more than one page, uncomment this and add <li>s for each page. Make sure to update your prev and last (the first and last <li>s in the group) with the correct url on each page. Add class="active" to the <li> you want to be active. Add class="disabled" to the <li> if you want to disable it.
+			-->
+			<!--
+			<div class="row"> 
+				<ul class="pagination col-sm-6 col-md-4 col-lg-4">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</div-->
+			<!-- end pagination .row -->
+
+		</div>
+	</div> 
+<!-- STOP EDITING HERE -->
+
+
+
+
+	<footer id="footer-inc"><!-- HTML is inserted here from /includes/footer.html --></footer>
+
+</div><!-- end / #wrapper -->
+
+<!-- scripts -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="javascripts/holder.js"></script>
+
+<!-- Function to include header/footer HTML files -->
+<script>
+$(function(){
+$("#header-inc").load("includes/header-home.html"); 
+$("#footer-inc").load("includes/footer-home.html"); 
+});
+</script>
+
+</body>
+</html>
