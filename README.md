@@ -7,11 +7,11 @@ The redesign documentation itself lives in the [gh-pages branch](https://github.
 
 ## Working Files Folders in the branch
 
-#### [App Submission Flow - Country / Price / Payments][2]
+#### [App Creation - Country / Price / Payments][2]
 
-#### [App Submission Flow - Managing Versions][3]
+#### [App Creation/Editing, and Managing Versions][3]
 
-#### And so on
+This file will be split so functionalities don’t overlap and they’re easier to critique.
 
 
 [2]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSub_CountryPricePayment/index.md
