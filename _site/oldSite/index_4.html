@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/templateStyles.css">
+</head>
+<body>
+
+<div id="wrapper">
+	<header id="header-inc"><!-- HTML is inserted here from /includes/header.html --></header>
+	
+
+
+
+<!-- START EDITING HERE -->
+	<div id="content">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					
+					<h1>Dev Pages Design - Project Overview</h1>
+
+					<ul class="pagination pull-right override-pagination-padding">
+						<li><a href="index_3.html">&laquo;</a></li>
+						<li><a href="index.html">1</a></li>
+						<li><a href="index_2.html">2</a></li>
+						<li><a href="index_3.html">3</a></li>
+						<li class="active"><a href="index_4.html">4</a></li>
+						<li><a href="index_5.html">5</a></li>
+						<li><a href="index_5.html">&raquo;</a></li>
+					</ul>
+					
+					<div class="clearfix"></div>
+
+					<div class="thumbnail override-thumbnail">
+						
+						<h3>Submit a New App User Flow</h3>
+
+						<p>
+							The Submit a New App User Flow ends after the user submits the app for review or after the user saves the app. At that point, the user is returned to the My Submissions page showing that the new app has been added and with the appropriate confirmation message ("saved" or "submitted").
+						</p>
+
+						<hr>
+
+						<a href="img/countrypricepayment/flow_app_submission.png" target="_blank" title="Click for larger size"><img src="img/countrypricepayment/flow_app_submission.png" alt="App Submission Flow"/></a>
+
+						<hr>
+						
+						<h4>NOTES</h4>
+						<ol class="notes-list">
+							<li><span>Sub-steps for Add App Details below.</span><br/>
+								<a href="img/countrypricepayment/flow_app_details_substeps.png" target="_blank" title="Click for larger size"><img class="override-img-padding override-thumb-img-left" width="900" src="img/countrypricepayment/flow_app_details_substeps.png" alt="Substeps for Add App Details"></a>
+							</li>
+							<li><span>Should developers upload all image sizes at this step? If not, figure out how to get them to add all sizes BEFORE SUBMITTING the app for review.</span></li>
+							<li><span>Select Payment Account is Required if developer chooses "users must purchase app" or "free to download but users can make in-app purchases.</span></li>
+							<li><span>Add In-app Purchases is Required if developer chooses "free to download but users can make in-app purchases."</span></li>
+						<ol>
+					</div>
+				</div>
+			</div><!-- end content .row -->
+
+			<!-- Pagination. If you have more than one page, uncomment this and add <li>s for each page. Make sure to update your prev and last (the first and last <li>s in the group) with the correct url on each page. Add class="active" to the <li> you want to be active. Add class="disabled" to the <li> if you want to disable it.
+			-->
+			<!--
+			<div class="row"> 
+				<ul class="pagination col-sm-6 col-md-4 col-lg-4">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</div-->
+			<!-- end pagination .row -->
+
+		</div>
+	</div> 
+<!-- STOP EDITING HERE -->
+
+
+
+
+	<footer id="footer-inc"><!-- HTML is inserted here from /includes/footer.html --></footer>
+
+</div><!-- end / #wrapper -->
+
+<!-- scripts -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="javascripts/holder.js"></script>
+
+<!-- Function to include header/footer HTML files -->
+<script>
+$(function(){
+$("#header-inc").load("includes/header-home.html"); 
+$("#footer-inc").load("includes/footer-home.html"); 
+});
+</script>
+
+</body>
+</html>
