@@ -48,7 +48,7 @@ h2{
 div.modal-body{
 	text-align: center;
 }
-p.longText, ol.longText{
+p.longText, ol.longText, ul.longtext{
 	font-size: 1.2em;
 }
 .menuHeading{
