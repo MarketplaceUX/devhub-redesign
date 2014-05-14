@@ -1,15 +1,24 @@
 ---
 layout: MarketplaceUXSpec
-multipage: false
+multipage: true
+multiURL: projectGoals.html
+multisequence: two
 ---	
 
 <div class="container">
+
 	<h1>Project Goals</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include homePagination.html %}
+	{% endif %}
+
 	<div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5">
 		<ul class="longtext">
 			<li>Improve seller perception of submitting an app from the current level of "an emotional low" to something they feel positive about</li>
 			<li>Improve seller perception of managing an app from the current level of "an emotional low" to something they feel positive about</li>
-			<li>Increase the quantiy of app submissions by n% in the first six months of this design being fully implimented</li>
+			<li>Increase the quantity of app submissions by n% in the first six months of this design being fully implimented</li>
 			<li>Decrease the submission flow abandonment to &lt; 25%</li>
 			<li>Increase the quality of app description content in the first six months of this design being fully implimented:
 				<ul>
@@ -19,9 +28,3 @@ multipage: false
 			</li>
 		</ul>
 	</div>
-	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
-		NOTE: This is currently broken in the Jekyll ver of this template.
-		-->
-		{% if page.multipage %}
-			{% include homePagination.html %}
-		{% endif %}

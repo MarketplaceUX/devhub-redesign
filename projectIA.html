@@ -1,17 +1,28 @@
 ---
 layout: MarketplaceUXSpec
-multipage: false
+multipage: true
+multiURL: projectIA.html
+multisequence: five
 ---	
 
 <div class="container">
-	<h1>Information Architecture</h1>
-	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
-		<h2><a href="img/sitemap.pdf" target="_blank">DevHub Sitemap</a></h2>
-		
-		<h4>NOTES</h4>
-		<p><b>Logged-out users</b> will see DevHub landing page. <br/><b>Logged-in users</b> will see My Apps page instead.</p>
+	<h1>Information Architecture &amp; User Flows</h1>
 
-		<h2>Top-level pages</h2>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include homePagination.html %}
+	{% endif %}
+	
+	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+		<h4><a href="img/sitemap.pdf" target="_blank">See the DevHub Sitemap &raquo;</a></h4>
+		
+		<h4>User Flows</h4>
+		<ol class="longText"><!--liz is working on this -->
+			<!--li><a href="flow_signin.pdf">Sign in from landing page</a></li>
+			<li><a href="">Lorem ipsum</a></li-->
+		</ol>
+
+		<!--h2>Top-level pages</h2>
 		<ol class="longText">
 			<li><b>My Submissions</b> - My Submissions is a page listing the user's apps. If no apps, just have the CTA to "Submit a New App." Could have a dropdown in topnav listing the user's apps for quick reference, but this isn't scalable...</li>
 			
@@ -27,9 +38,10 @@ multipage: false
 		<h2>Section: My Account</h2>
 		<ol class="longText">
 			<li><b>What's in this section?</b></li>
-		</ol>
+		</ol-->
 	</div>
-	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+	
+	<!--div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
 		<h2>Section: My Submissions</h2>
 		<ol class="longText">
 			<li><b>Add/Edit App</b> - This is the same series of pages, though some are not available in edit mode.
@@ -57,10 +69,4 @@ multipage: false
 			<li><b>User Feedback</b> - if available. What does this look like?</li>
 			<li><b>Analytics</b> - if available. What does this look like?</li>
 		</ol>
-	</div>
-	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
-		NOTE: This is currently broken in the Jekyll ver of this template.
-		-->
-		{% if page.multipage %}
-			{% include homePagination.html %}
-		{% endif %}
+	</div-->
