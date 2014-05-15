@@ -14,8 +14,10 @@
 		{% elsif page.multisequence == 'three' %}
 			<a href="projectGoals.html">
 		{% elsif page.multisequence == 'four' %}
-			<a href="projectAssumptions.html">
+			<a href="projectAudience.html">
 		{% elsif page.multisequence == 'five' %}
+			<a href="projectStrategy.html">
+		{% elsif page.multisequence == 'six' %}
 			<a href="projectPrinciples.html">				
 		{% endif %}
 		
@@ -28,11 +30,13 @@
 		
 		<li {% if page.multiURL == 'projectGoals.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectGoals.html">2</a></li>
 		
-		<li {% if page.multiURL == 'projectAssumptions.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectAssumptions.html">3</a></li>
-		
-		<li {% if page.multiURL == 'projectPrinciples.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectPrinciples.html">4</a></li>
+		<li {% if page.multiURL == 'projectAudience.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectAudience.html">3</a></li>
 
-		<li {% if page.multiURL == 'projectIA.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectIA.html">5</a></li>
+		<li {% if page.multiURL == 'projectStrategy.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectStrategy.html">4</a></li>
+		
+		<li {% if page.multiURL == 'projectPrinciples.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectPrinciples.html">5</a></li>
+
+		<li {% if page.multiURL == 'projectIA.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectIA.html">6</a></li>
 
 <!-- This part deals with disabled state of the FORWARD arrow. Disabled state is for the LAST page of the multi pages. -->
 {% if page.multiURL == "projectIA.html" %}
@@ -44,10 +48,12 @@
 		{% if page.multisequence == 'one' %}
 			<a href="projectGoals.html">
 		{% elsif page.multisequence == 'two' %}
-			<a href="projectAssumptions.html">
+			<a href="projectAudience.html">
 		{% elsif page.multisequence == 'three' %}
-			<a href="projectPrinciples.html">
+			<a href="projectStrategy.html">
 		{% elsif page.multisequence == 'four' %}
+			<a href="projectPrinciples.html">
+		{% elsif page.multisequence == 'five' %}
 			<a href="projectIA.html">				
 		{% endif %}
 		
