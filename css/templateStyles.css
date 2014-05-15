@@ -48,11 +48,13 @@ h2{
 div.modal-body{
 	text-align: center;
 }
-p.longText, ol.longText, ul.longtext{
+p.longText, ol.longText, ul.longText{
 	font-size: 1.2em;
 }
+ol.longText>li, ul.longText>li {
+	margin-bottom: .65em;
+}
 .menuHeading{
-	
 	padding-bottom: 2px;
 	border-bottom: rgba(255,149,0,0.2) 1px solid;
 
