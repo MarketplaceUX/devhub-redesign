@@ -16,9 +16,14 @@
 		{% elsif page.multisequence == 'four' %}
 			<a href="projectAudience.html">
 		{% elsif page.multisequence == 'five' %}
-			<a href="projectStrategy.html">
+			<a href="projectJourney.html">
 		{% elsif page.multisequence == 'six' %}
+			<a href="projectStrategy.html">
+		{% elsif page.multisequence == 'seven' %}
 			<a href="projectPrinciples.html">				
+		{% elsif page.multisequence == 'eight' %}
+			<a href="projectConcepts.html">				
+				
 		{% endif %}
 		
 		&laquo;</a>
@@ -32,11 +37,15 @@
 		
 		<li {% if page.multiURL == 'projectAudience.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectAudience.html">3</a></li>
 
-		<li {% if page.multiURL == 'projectStrategy.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectStrategy.html">4</a></li>
+		<li {% if page.multiURL == 'projectJourney.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectJourney.html">4</a></li>
 		
-		<li {% if page.multiURL == 'projectPrinciples.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectPrinciples.html">5</a></li>
+		<li {% if page.multiURL == 'projectStrategy.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectStrategy.html">5</a></li>
 
-		<li {% if page.multiURL == 'projectIA.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectIA.html">6</a></li>
+		<li {% if page.multiURL == 'projectPrinciples.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectPrinciples.html">6</a></li>
+
+		<li {% if page.multiURL == 'projectConcepts.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectConcepts.html">7</a></li>
+
+		<li {% if page.multiURL == 'projectIA.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectIA.html">8</a></li>
 
 <!-- This part deals with disabled state of the FORWARD arrow. Disabled state is for the LAST page of the multi pages. -->
 {% if page.multiURL == "projectIA.html" %}
@@ -50,11 +59,15 @@
 		{% elsif page.multisequence == 'two' %}
 			<a href="projectAudience.html">
 		{% elsif page.multisequence == 'three' %}
-			<a href="projectStrategy.html">
+			<a href="projectJourney.html">
 		{% elsif page.multisequence == 'four' %}
-			<a href="projectPrinciples.html">
+			<a href="projectStrategy.html">
 		{% elsif page.multisequence == 'five' %}
-			<a href="projectIA.html">				
+			<a href="projectPrinciples.html">
+		{% elsif page.multisequence == 'six' %}
+			<a href="projectConcepts.html">				
+		{% elsif page.multisequence == 'seven' %}
+			<a href="projectIA.html">					
 		{% endif %}
 		
 		&raquo;</a>
