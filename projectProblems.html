@@ -1,0 +1,37 @@
+---
+
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: projectPrinciples.html
+multisequence: nine
+---	
+
+<div class="container">
+	<h1>Current Problems</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include homePagination.html %}
+	{% endif %}
+	
+	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+
+		<h3>App Submission</h3>
+
+		<ul class="longText">
+
+			<li><b>Create Manifest</b><br/> Many developers come to submit their web app but have but dont have a manifest file, the submit manifest section could have a link to create a manifest, this would be helpful for developers who dont have manifest yet </li>
+
+			<li><b>Privacy Policy</b> <br/>A privacy policy template could be shown for developers who are not sure what to include in the Privacy Policy Section  </li>
+
+			<li><b>Content Rating </b> <br/> A shorter method for content rating if possible </li>
+
+			<li><b>Analytics</b> <br/> An analytics section once the app is published like the number of downloads, download for every country, etc.  </li>
+
+			<li><b>Publish a new version on the app</b><br/> An easy method to update the version of an already published app </li>
+
+		</ul>
+		
+		
+		
+	</div>
