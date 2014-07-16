@@ -1,0 +1,135 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: third_2.html
+multisequence: third_2
+---	
+
+<div class="container">
+	
+	<h1>Reference: Earlier Concepts - June 2014</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include thirdPagination.html %}
+	{% endif %}
+	
+	<div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-1">
+		<h3>Theme: Devhub is a tool (not a website)</h3>
+
+		<ol class="longText">
+			<li><strong><a href="concept_ide.html">Devhub is an IDE</a></strong><br/>
+			All the things together in one package:<br/>
+				<ul>
+					<li>You start an app by creating a new project. A new project is populated with starter files and directories</li>
+					<li>You work on the file normally, but it's also possible to use the interface builder to work on the design</li>
+					<li>When working on the manifest file, the editor will do code completion. It can also present you with an interactive form if you don't want to edit the manifest by hand</li>
+					<li>App management (categories, price, avaiability ratings, payment accounts) happen inside the IDE</li>
+					<li>App statistics is also included</li>
+					<li>App user testing is also included</li>
+				</ul>
+			</li>
+			
+			<li><strong>Devhub is an interface builder + app submitter</strong><br/>
+			Think of it as an interface builder that sits on top of a technology like Bricks or Cordova. User can pick a layout, drag and drop elements  onto a canvas, populate it with multimedia and RSS content, customize  the loading screen and background, and choose a color scheme. The idea  is to build open web apps without writing a single line of code.  Although the builder does generate code that user can edit. It can also  handle submission to the Marketplace and do it with one click. We  don't have to make our own from scratch. Is there an existing open-source site builder that we can fork and refit for mobile/tablet layouts?</li>
+			
+			<li><strong>Devhub is a manifest + packaged app generator + app submitter</strong><br/>
+			Think of it as an app that sits alongside your text editor. When you're done working on your app, you open this app. This app opens a GUI that will create a manifest file. But not only that, it can also zip up your app and generate a .zip file that's ready for submission. Bonus: if you want to localize your app's manifest, you don't need to edit the file by hand. Just use the GUI.</li>
+			
+			<li><strong>Devhub makes editing app manifest painless</strong><br/>
+			This is a plugin that's even more lightweight than the above. It consists of a plugin for text editors that will syntax highlight and suggest keys for app manifest. This is something that partners have asked for, too. Developers will still need to generate the package manually and submit it using the website, but the manifest file is taken care of.</li>
+			
+			<li><strong>Devhub is an app that lives on your phone, tablet or desktop</strong><br/>
+			Instead of making Devhub a Mozilla property, make it an app. The idea is to upload your manifest into the app. App submission and management is done on that app. By using an app to submit and manage, I don't have to be online in order to manage my app. Whenever I get online, the change I've made gets applied.</li>
+			
+			<li><strong><a href="concept_remoterepo.html">Devhub hosts remote repositories for web apps</a></strong><br/>
+			<a href="concept_remoterepo_flows.html">Flow explorations</a><br/>
+			Every time developer saves a file on desktop, it's synched to his non-public app that's hosted on Marketplace. Dev can download the non-public app to his mobile device, so he can view the changes immediately on a real phone. Submitting is trivial: just click submit. To publish an app, just set its status to public, and everybody will be able to see it.</li>
+			
+			<li><strong><a href="concept_github.html">Devhub is an app publishing service on Github</a></strong><br/>
+			Maybe Devhub shouldn't be a repository, but it should make publishing app via Github really easy. If I have a Marketplace-ready repository on Github, submitting takes one click. But with one more twist: if I commit to Github, the changes actually sync to my Marketplace app, as well. This makes updating my app as easy as updating my repo.</li>
+		</ol>
+
+		<h3>Theme: Play well with other marketplaces</h3>
+
+		<ol class="longText">
+			<li><strong>If you've already submitted to another store</strong>, just give us the URL to the other store app, and we'll take care of the rest. Including pricing and countries.</li>
+			<li>Do it the other way around. After you finish submitting to Firefox Marketplace, we say "<strong>Would you like to submit this</strong> to Amazon, Apple App Store, Google Play Store, etc.?"</li>
+		</ol>
+
+		<h3>Theme: Shift responsibility</h3>
+
+		<ol class="longText">
+			<li><strong>Let's let our developer community build Devhub</strong><br/>
+			Give them the business rules, and let them decide how they want it to be.</li>
+			
+			<li><strong>Devhub is a concierge service</strong><br/>
+			As we do for biz partners, let's hand-hold developers through the app submission/management process.</li>
+			
+			<li><strong><a href="concept_dropoff.html">Devhub is a drop-off service for app</a></strong><br/>
+			<a href="img/devhub-drop-off-service-ui-text-description-flow-jaydev.pdf">Description of this flow</a><br/>
+			<a href="img/devhub-drop-off-service-ui-flow-jaydev.pdf">Visualizations of this flow</a><br/>
+			First, build your app. Then, drop it off at Devhub and tell us what you  want (where would you like to distribute, etc.). We'll complete  everything for you from start to finish.<br/>
+			</li>
+			
+			<li>What if developers could pay someone a small amount to do Devhub for them?</li>
+		</ol>
+
+		<h3>Theme: Make Devhub a bigger concept</h3>
+
+		<ol class="longText">
+			<li><strong>Devhub is a platform for collaborating on the future of open web apps</strong><br/>
+			Submit an app idea, others can say they want to help you build it, build it together, and share the revenue. You don't have to be a developer to contribute. <strong>A Kickstarter-like idea</strong>.<br/>
+			Submit an idea, submit some codes, or submit a finished app package. Collaboration can happen in the ideation phase (help narrow down/brainstorm), in the building phase (contribute code, user test), or in the launch phase (promote/street team/gather feedback, compile feedback for v2). Partners can look and invest.</li>
+			
+			<li><strong>Devhub is the only marketplace with App Advisors</strong><br/>
+			Everything remains normal, but you can have your app professionally evaluated prior to submission and launching it. Get get feedback from pros that could make your app  better before submitting it. Possibly the "pros" are Moz employees and/or contributors.</li>
+			
+			<li><strong><a href="concept_appmanager.html">App Manager is Devhub</a></strong><br/>
+			<a href="concept_appmanager_flows.html">Flow explorations</a><br/>
+			App manager is the centerpiece of all software build-launch-manage activities. Kill Devhub.</li>
+			
+			<li><strong>Devhub is where Firefox Marketplace apps are forkable</strong><br/>
+			You can download the source code of some apps (if the app's developer allows it) and use it as a base for building your app.</li>
+			
+			<li>Marketplace is the app store with new sources of revenue for developers<br/>
+			Marketplace is the app store with <strong>new sources of revenue for developers</strong></li>
+			
+			<li>Devhub is where developers <strong>don't necessarily have to make apps to earn money</strong><br/>
+			What if they could consult for fees to other developers?</li>
+		</ol>
+
+		<h3>Theme: Improve the interface</h3>
+
+		<ol class="longText">
+			<li><strong>One click "Send to Devhub"</strong><br/>
+			At some point during the build process, you're going to test it out on either the simulator or a phone. The idea is to have a link to submit the app right then and there. We package everything and submit it.</li>
+			<li><strong>Devhub is Ask Jeeves</strong><br/>
+			Just type in what you want to do today, and we'll serve up the relevant pages as "worksheets" to complete. Completely non-linear. Task-based.</li>
+			<li>What if </strong>many people (not just one) can be responsible for submitting</strong> and managing one app?<br/>
+			We have this feature already for app management, but not for app  submission. We know that the submission process is long. This way, I get  to pick a price, but my finance guy can take care of the payment  accounts registration. I get to upload a manifest, but my designer gets  to upload the screenshot and video and get creative control over the app  listing page.</li>
+			<li><strong>App's completeness</strong><br/>
+			Every time you log in and your app is not yet submitted, we'll show you what you still need to complete in order to submit. For example, it might say "80% complete: you need to fill in [description], [screenshot] and [price]"</li>
+			<li><strong>Family mode</strong><br/>
+			DevHub should understand that you work from home and have family around.
+				<ul>
+					<li>It should auto-save, so whenever you need to run and tend to your kids, your progress isn't ruined</li>
+					<li>Accidental and random keyboard inputs (scenario: kid banging on keyboard) won't be registered, so it won't ruin your app</li>
+					<li>A simple game inside DevHub that you can play to help calm a kid that's throwing a fit</li>
+				</ul>
+			</li>
+		</ol>
+
+		<h3>Theme: Cover all the steps</h3>
+
+		<ol class="longText">
+			<li>Hacks blog helps developer to explore and consider. It lists great apps and success stories.</li>
+			<li>MDN helps developer to build. It provides open web apps tutorials from start to finish.</li>
+			<li>DevHub helps developer confirm and launch. It allows developers to test his app to a select audience and then launch it to the world.</li>
+			<li>There are a lot of companies that already do prepare (<a href="http://moz.com" target="_blank">moz</a>, etc.) and listen (<a href="http://appannie.com" target="_blank">AppAnnie</a>, etc.), but their content isn't specific to Open Web Apps. We can partner with them.
+		</ol>
+
+	</div>
+
+	<p class="longText" style="float:left;"><br/><a href="second_1.html">< Previous Section</a></0>
+	

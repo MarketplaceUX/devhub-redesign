@@ -3,73 +3,40 @@
 <ul class="pagination col-sm-6 col-md-4 col-lg-4">		
 
 <!-- This part deals with disabled state of the BACK arrow. Disabled state is for the FIRST page of the multi pages. -->
-{% if page.multiURL == "projectOverview.html" %}
+{% if page.multiURL == "home_1.html" %}
 	<li class="disabled"><a href="#">&laquo;</a></li>
 
 <!--  This part deals with the enabled state of the BACK arrow. The FIRST page is not included in this section b/c its included in the DISABLED state above. REMEMBER that the BACK arrow links to PREVIOUS page URLs. -->
 {% else %}
 	<li>
-		{% if page.multisequence == 'two' %}
-			<a href="projectOverview.html">
-		{% elsif page.multisequence == 'three' %}
-			<a href="projectGoals.html">
-		{% elsif page.multisequence == 'four' %}
-			<a href="projectAudience.html">
-		{% elsif page.multisequence == 'five' %}
-			<a href="projectJourney.html">
-		{% elsif page.multisequence == 'six' %}
-			<a href="projectStrategy.html">
-		{% elsif page.multisequence == 'seven' %}
-			<a href="projectPrinciples.html">				
-		{% elsif page.multisequence == 'eight' %}
-			<a href="projectConcepts.html">				
-				
+		{% if page.multisequence == 'home_2' %}
+			<a href="home_1.html">
+		{% elsif page.multisequence == 'home_3' %}
+			<a href="home_2.html">				
 		{% endif %}
-		
 		&laquo;</a>
 	</li>
 {% endif %}
 
 <!-- This part deals with the MIDDLE pages (not FIRST or LAST) of the multi page navigation. -->
-		<li {% if page.multiURL == 'projectOverview.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectOverview.html">1</a></li>
+		<li {% if page.multiURL == 'home_1.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/home_1.html">1</a></li>
 		
-		<li {% if page.multiURL == 'projectGoals.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectGoals.html">2</a></li>
+		<li {% if page.multiURL == 'home_2.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/home_2.html">2</a></li>
 		
-		<li {% if page.multiURL == 'projectAudience.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectAudience.html">3</a></li>
-
-		<li {% if page.multiURL == 'projectJourney.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectJourney.html">4</a></li>
-		
-		<li {% if page.multiURL == 'projectStrategy.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectStrategy.html">5</a></li>
-
-		<li {% if page.multiURL == 'projectPrinciples.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectPrinciples.html">6</a></li>
-
-		<li {% if page.multiURL == 'projectConcepts.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectConcepts.html">7</a></li>
-
-		<li {% if page.multiURL == 'projectIA.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectIA.html">8</a></li>
+		<li {% if page.multiURL == 'home_3.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/home_3.html">3</a></li>
 
 <!-- This part deals with disabled state of the FORWARD arrow. Disabled state is for the LAST page of the multi pages. -->
-{% if page.multiURL == "projectIA.html" %}
+{% if page.multiURL == "home_3.html" %}
 	<li class="disabled"><a href="#">&raquo;</a></li>
 
 <!--  This part deals with the enabled state of the FORWARD arrow. The LAST page is not included in this section b/c its included in the DISABLED state above.  REMEMBER that the FORWARD arrow links to NEXT page URLs. -->
 {% else %}
 	<li>
-		{% if page.multisequence == 'one' %}
-			<a href="projectGoals.html">
-		{% elsif page.multisequence == 'two' %}
-			<a href="projectAudience.html">
-		{% elsif page.multisequence == 'three' %}
-			<a href="projectJourney.html">
-		{% elsif page.multisequence == 'four' %}
-			<a href="projectStrategy.html">
-		{% elsif page.multisequence == 'five' %}
-			<a href="projectPrinciples.html">
-		{% elsif page.multisequence == 'six' %}
-			<a href="projectConcepts.html">				
-		{% elsif page.multisequence == 'seven' %}
-			<a href="projectIA.html">					
+		{% if page.multisequence == 'home_1' %}
+			<a href="home_2.html">
+		{% elsif page.multisequence == 'home_2' %}
+			<a href="home_3.html">				
 		{% endif %}
-		
 		&raquo;</a>
 	</li>
 {% endif %}

@@ -1,0 +1,76 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: third_1.html
+multisequence: third_1
+---	
+
+<div class="container">
+	
+	<h1>Current UX Work - week of 07/14/14</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include thirdPagination.html %}
+	{% endif %}
+
+	
+	<div class="col-lg-3 box-instruct">
+	
+		<p class="longText"><b>How This Page Works</b>
+		</p>
+
+		<p class="longText">We'll update this page weekly as this project continues. <b><span class="red">The latest conversation about the project will always be in the most recent Discussion Thread</b> (click Open Issues in the topnav).</span> Join in!
+		</p>
+
+		<p class="longText">As each week happens, we'll add new "Week of X" content to this page. Consider this page a running record of what we're currently working on.
+		</p>
+	</div>
+	
+	
+
+	<!--div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-1" style="border:1px solid red;"-->
+
+	<div class="col-sm-6 col-md-6 col-lg-7 col-lg-offset-2">
+		
+		<h3 class="no-top">Week of 07/14/14</h3>
+
+		<p class="longText">Both of our concepts require the developer to complete the App Manifest offline using his local environment and tools. It's critical that the instructions for completeing the App Manifest are correct, clear, and well written. The instructions must also be presented in ways that make it easy for readers (developers) to quickly find and understand information within the instructions.
+		</p>
+
+		<p class="longText">We'll be running a series of tests to answer the following questions:
+		</p>
+			<ol class="longText">
+				
+				<li>What difference does content make? For this question, we'll rewrite the App Manifest instructions on App Center to see if clearer/more concise content improves developers' ability to create a succesful App Manifest. We're also interested here in which information design tactics of the App Center page lead to the best results (App Manifest file that validates).</li>
+				
+				<li>What difference does format make? For this question, we'll test several methods of presenting the instructions to see what impact each has on developers' ability to submit a succesfull App Manifest.</li>
+
+			</ol>
+
+		<p class="longText">We are currently running a test to establish a baseline from which we will run subsequent tests. We'll post our findings here in the next couple of days.</p>
+
+
+		
+		<h3>Week of 06/23/14</h3>
+
+		<p class="longText">Following team discussions and conversations with people at App Days, we've decided to pursue two concepts in more detail:
+		</p>
+			<ul class="longText">
+				
+				<li><a href="concept_dropoff.html">Devhub as a concierge/dropoff service</a></li>
+				
+				<li><a href="concept_remoterepo.html">Devhub as a remote repository</a></li>
+
+			</ul>
+		
+		<p class="longText">In the next few weeks, we'll be doing some user testing to identify areas of focus for each concept.
+		</p>
+
+		
+		<!-- LEAVE THESE BRs HERE TO PROVIDE MORE BREATHING ROOM AT BOTTOM -->
+		<br/><br/>
+
+
+	</div>
+	

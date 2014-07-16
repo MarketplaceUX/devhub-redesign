@@ -8,9 +8,17 @@ To view the document visit http://tsmuse.github.io/FirefoxMarketplaceDevPagesDes
 ## How to Contribute
 If you'd like to actively participate in the design process, please document your work in the site hosted here. Making a fork of this repo and then submitting pull requests is the best way to get new pages added. 
 
+## Changelog
+07/16/2014: 
+* Removed (or hid) content not relevant to current work on the 2 new concepts.
+
+05/19/2014: 
+* Added Changelog to master README. Changes to either branch will be noted here (with links to the affected pages or site areas).
+* Changed pdfs to inline images + removed open new window from some hrefs
+*
+
 ### Making New Pages
 This site is using Jekyll to ease the burden of updating shared components (like the top navigation area). Because of this you need to know where to edit specific parts of pages. 
-
 * The header for the page, top nav, footer and any other reusable items all live in _includes folder. If you need to make changes to them, you have to edit the files in that folder and the changes will replicate across the site. Keep in mind the code in these files just gets pasted (essentially) into any page it’s included in, so you don’t have to navigate out of the _includes folders in any links to other files.
 * All the images for the site are in the img folder, commingled together. This mostly because it was simplier at the start of the project, if you need to make sub-folders in this folder feel free.
 * Research findings should live in the research folder (if they’re not a link to another website.) 

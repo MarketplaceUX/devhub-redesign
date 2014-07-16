@@ -34,8 +34,15 @@ h2{
 
 }
 
+/* Jumbotron */
 .jumbotron{
 	background:none;
+}
+.jumbotron h1 {
+	font-size: 36px;
+}
+.jumbotron p {
+	font-size: 20px;
 }
 
 .modal-lg{
@@ -69,6 +76,19 @@ h2.subhead{
 	font-size:1.4em;
 	font-weight: bold;
 	margin-top:-8px;
+}
+.box-instruct {
+	 float:left;
+	 clear:left;
+	 border:1px solid black;
+	 padding:12px;
+	 background: #ffffff;
+}
+.red {
+	color: red;
+}
+h3.no-top {
+	margin-top: 0;
 }
 #content{
 	padding-bottom: 70px;
