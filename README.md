@@ -10,7 +10,7 @@ If you'd like to actively participate in the design process, please document you
 
 ## Changelog
 07/16/2014: 
-* Removed (or hide) content not relevant to current work on the 2 new concepts.
+* Removed (or hid) content not relevant to current work on the 2 new concepts.
 
 05/19/2014: 
 * Added Changelog to master README. Changes to either branch will be noted here (with links to the affected pages or site areas).
