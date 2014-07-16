@@ -13,7 +13,11 @@ If you'd like to actively participate in the design process, please document you
 This site is using Jekyll to ease the burden of updating shared components (like the top navigation area). Because of this you need to know where to edit specific parts of pages. 
 =======
 ## Changelog
-5/19/2014: 
+07/16/2014: 
+* Removed (or hide) content not relevant to current work on the 2 new concepts.
+
+
+05/19/2014: 
 * Added Changelog to master README. Changes to either branch will be noted here (with links to the affected pages or site areas).
 * Changed pdfs to inline images + removed open new window from some hrefs
 *
