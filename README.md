@@ -6,10 +6,9 @@ This branch is home to all the individual files used in the process of the redes
 The redesign documentation itself lives in the [gh-pages branch](https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/tree/gh-pages)
 
 ## Changelog
-5/19/2014: 
+05/19/2014: 
 * Added Changelog to master README. Changes to either branch will be noted here (with links to the affected pages or site areas).
 * Changed pdfs to inline images + removed open new window from some hrefs
-*
 
 
 
@@ -18,17 +17,9 @@ The redesign documentation itself lives in the [gh-pages branch](https://github.
 
 #### [Experience Design documents][1]
 
-#### [App Creation - Country / Price / Payments][2]
-
-#### [App Creation/Editing, and Managing Versions][3]
-
 This file will be split so functionalities don’t overlap and they’re easier to critique.
 
 
 [1]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/tree/master/Experience_Docs/index.md
-
-[2]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSub_CountryPricePayment/index.md
-
-[3]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSubmissionEditFlow/index.md
 
 
