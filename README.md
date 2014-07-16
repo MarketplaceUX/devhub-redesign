@@ -5,11 +5,39 @@ These are the files that make up the current design document for the Firefox Mar
 
 To view the document visit http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/ All the supporting files used to create the content for this document are available in the master branch of this project. 
 
+<<<<<<< HEAD
 ## How to Contribute
 If you'd like to actively participate in the design process, please document your work in the site hosted here. Making a fork of this repo and then submitting pull requests is the best way to get new pages added. 
 
 ### Making New Pages
 This site is using Jekyll to ease the burden of updating shared components (like the top navigation area). Because of this you need to know where to edit specific parts of pages. 
+=======
+## Changelog
+5/19/2014: 
+* Added Changelog to master README. Changes to either branch will be noted here (with links to the affected pages or site areas).
+* Changed pdfs to inline images + removed open new window from some hrefs
+*
+
+
+
+
+## Working Files Folders in the branch
+
+#### [Experience Design documents][1]
+
+#### [App Creation - Country / Price / Payments][2]
+
+#### [App Creation/Editing, and Managing Versions][3]
+
+This file will be split so functionalities don’t overlap and they’re easier to critique.
+
+
+[1]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/tree/master/Experience_Docs/index.md
+
+[2]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSub_CountryPricePayment/index.md
+
+[3]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/blob/master/AppSubmissionEditFlow/index.md
+>>>>>>> ef4f75e3150f97b4fa6b4a1d2a76c4adced2c3d2
 
 * The header for the page, top nav, footer and any other reusable items all live in _includes folder. If you need to make changes to them, you have to edit the files in that folder and the changes will replicate across the site. Keep in mind the code in these files just gets pasted (essentially) into any page it’s included in, so you don’t have to navigate out of the _includes folders in any links to other files.
 * All the images for the site are in the img folder, commingled together. This mostly because it was simplier at the start of the project, if you need to make sub-folders in this folder feel free.

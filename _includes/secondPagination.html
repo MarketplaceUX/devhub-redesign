@@ -1,0 +1,47 @@
+<!-- DONT FORGET TO ADD "multiURL" and "multisequence" tags to the page you're working with. Also change multipage to "true". -->
+
+<ul class="pagination col-sm-6 col-md-4 col-lg-4">		
+
+<!-- This part deals with disabled state of the BACK arrow. Disabled state is for the FIRST page of the multi pages. -->
+{% if page.multiURL == "second_1.html" %}
+	<li class="disabled"><a href="#">&laquo;</a></li>
+
+<!--  This part deals with the enabled state of the BACK arrow. The FIRST page is not included in this section b/c its included in the DISABLED state above. REMEMBER that the BACK arrow links to PREVIOUS page URLs. -->
+{% else %}
+	<li>
+		{% if page.multisequence == 'second_2' %}
+			<a href="second_1.html">
+		{% elsif page.multisequence == 'second_3' %}
+			<a href="second_2.html">				
+				
+		{% endif %}
+		
+		&laquo;</a>
+	</li>
+{% endif %}
+
+<!-- This part deals with the MIDDLE pages (not FIRST or LAST) of the multi page navigation. -->
+		<li {% if page.multiURL == 'second_1.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/second_1.html">1</a></li>
+		
+		<li {% if page.multiURL == 'second_2.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/second_2.html">2</a></li>
+		
+		<li {% if page.multiURL == 'second_3.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/second_3.html">3</a></li>
+
+<!-- This part deals with disabled state of the FORWARD arrow. Disabled state is for the LAST page of the multi pages. -->
+{% if page.multiURL == "second_3.html" %}
+	<li class="disabled"><a href="#">&raquo;</a></li>
+
+<!--  This part deals with the enabled state of the FORWARD arrow. The LAST page is not included in this section b/c its included in the DISABLED state above.  REMEMBER that the FORWARD arrow links to NEXT page URLs. -->
+{% else %}
+	<li>
+		{% if page.multisequence == 'second_1' %}
+			<a href="second_2.html">
+		{% elsif page.multisequence == 'second_2' %}
+			<a href="second_3.html">		
+		{% endif %}
+		
+		&raquo;</a>
+	</li>
+{% endif %}
+
+</ul>

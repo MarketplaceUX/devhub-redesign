@@ -1,0 +1,50 @@
+---
+layout: MarketplaceUXSpec
+multipage: false
+---	
+
+<div class="container">
+	<div class="row">
+		<h1 class="col=sm-12 col-md-12 col-lg-12">Design Story: Simplify pricing options</h1>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-sm-4 col-md-4 col-lg-5">
+			<div class="thumbnail">
+					<!-- hidden on XS displays aka phones -->
+					<a href="#" data-toggle="modal" data-target="#thumb1Modal" class="hidden-xs">
+						<img src="img/design-pricing_1.png" alt="thumbnail image, replace this alt text"/>
+					</a>
+					<!-- for use on XS displays aka phones -->
+					<a href="img/design-pricing_1.png" class="visible-xs">
+						<img src="img/design-pricing_1.png" alt="thumbnail image, replace this alt text"/>
+					</a>
+					<h4><a href="http://cbwmwo.axshare.com" target="_blank">See the prototype</a></h4>
+				</div>
+			</div>
+			<!-- modal for full-size view of image in thumbnail number 1 -->
+			<div class="modal fade" id="thumb1Modal" tabindex="-1" role="dialog" aria-labelledby="thumbnail1Modal" aria-describeby="A modal window to show a fullsized image for thumbnail number one" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4>Pricing Page</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/design-pricing_1.png" alt="Full size pricing page"/>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="col-sm-8 col-md-8 col-lg-7 ">
+			<p class="longText">
+				In Progress - Need to add ability to NOT choose a pricing option. E.g, if a country has several pricing options, I want the ability to choose only some of them. 
+			</p>
+		</div>
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}

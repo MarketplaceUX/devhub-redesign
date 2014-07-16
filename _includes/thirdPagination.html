@@ -1,0 +1,41 @@
+<!-- DONT FORGET TO ADD "multiURL" and "multisequence" tags to the page you're working with. Also change multipage to "true". -->
+
+<ul class="pagination col-sm-6 col-md-4 col-lg-4">		
+
+<!-- This part deals with disabled state of the BACK arrow. Disabled state is for the FIRST page of the multi pages. -->
+{% if page.multiURL == "third_1.html" %}
+	<li class="disabled"><a href="#">&laquo;</a></li>
+
+<!--  This part deals with the enabled state of the BACK arrow. The FIRST page is not included in this section b/c its included in the DISABLED state above. REMEMBER that the BACK arrow links to PREVIOUS page URLs. -->
+{% else %}
+	<li>
+		{% if page.multisequence == 'third_2' %}
+			<a href="third_1.html">			
+				
+		{% endif %}
+		
+		&laquo;</a>
+	</li>
+{% endif %}
+
+<!-- This part deals with the MIDDLE pages (not FIRST or LAST) of the multi page navigation. -->
+		<li {% if page.multiURL == 'third_1.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/third_1.html">1</a></li>
+		
+		<li {% if page.multiURL == 'third_2.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/third_2.html">2</a></li>
+
+<!-- This part deals with disabled state of the FORWARD arrow. Disabled state is for the LAST page of the multi pages. -->
+{% if page.multiURL == "third_2.html" %}
+	<li class="disabled"><a href="#">&raquo;</a></li>
+
+<!--  This part deals with the enabled state of the FORWARD arrow. The LAST page is not included in this section b/c its included in the DISABLED state above.  REMEMBER that the FORWARD arrow links to NEXT page URLs. -->
+{% else %}
+	<li>
+		{% if page.multisequence == 'third_1' %}
+			<a href="third_2.html">		
+		{% endif %}
+		
+		&raquo;</a>
+	</li>
+{% endif %}
+
+</ul>

@@ -1,0 +1,39 @@
+---
+layout: MarketplaceUXSpec
+multipage: false
+---	
+
+<div class="container">
+	<h1>User Stories Addressed</h1>
+	<h2 class="subhead">Manage App Versions</h2>
+	<div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5">
+		<ol class="longText">
+			<li><span>I want to continue an existing submission that’s been saved but not yet submitted for review</span>
+						<p>
+							<a href="https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/issues/7">Related Github issue</a>  |  <a href="design-versions.html">Related Design Story</a>  |  <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10a_edit__manifest__version___publishing" target="_blank">View prototype</a>
+						</p>
+					</li>
+					<li><span>I want to resubmit a version of my app and provide an explanation, if the review team comes back saying “rejected” or “more information needed”.</span>
+						<p>
+							<a href="https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/issues/7">Related Github issue</a>  |  <a href="design-versions.html">Related Design Story</a>  |  <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10b_rejected" target="_blank">View prototype</a>
+						</p>
+					</li>
+					<li><span>I want to publish a version of the app that has been reviewed as “approved”.</span>
+						<p>
+							<a href="https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/issues/7">Related Github issue</a>  |  <a href="design-versions.html">Related Design Story</a>  |  <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10d_approved" target="_blank">View prototype</a>
+						</p>
+					</li>
+					<li><span>I want to add a new version of the manifest or packaged file, and submit it for review</span>
+						<p>
+							<a href="https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/issues/7">Related Github issue</a>  |  <a href="design-versions.html">Related Design Story</a>  |  <a href="http://people.mozilla.org/~bpitoyo/marketplace/inline-editing/#p=10e_publish__then_add_new_version" target="_blank">View prototype</a>
+						</p>
+					</li>
+		</ol>
+		
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}

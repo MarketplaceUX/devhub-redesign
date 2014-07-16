@@ -1,0 +1,46 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: second_2.html
+multisequence: second_2
+---	
+
+<div class="container">
+	
+	<h1>Triggers + Behaviors</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include secondPagination.html %}
+	{% endif %}
+
+	<div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-1">
+		
+		<p class="longText"><br/>To improve the app submission process, we looked at the events and actions that trigger steps in the Developer Journey. We also considered the different types of activities (behaviors) developers might engage in at those steps.</p>
+
+		<p class="longText"><b>Our goal is not to suggest that the Developer Journey is always linear (though it is for some developers). Nor do we believe that every developer engages in all steps of the Developer Journey (though some do). Likewise we don't believe that every developer engages in all activities at a specific step of the Developer Journey (though some may).</b></p>
+
+		<p class="longText">Rather we're interested in the scope and breadth of activities developers engage in throughout their process. We're looking for patterns of activity (behaviors) that we can target with our design.</p>
+
+		<p class="longText">This analysis is ongoing. You can find our latest <a href="https://docs.google.com/a/mozilla.com/spreadsheets/d/1p6m_bW4ps7pqY0IApNSX7qmDetEuMqELGUbEcZyhm5w">thinking here</a> (Google spreadsheet). <!--Using this foundation, we're better equipped to ask the right kinds of questions about our design (strategic and detailed), for example
+			<ul class="longText">
+				<li>What's the best support for this activity?</li>
+				<li>Is it online? Is it offline? A combination?</li>
+				<li>Is support available elsewhere? Should Mozilla provide additional support? If so, which parts of the Mozilla community are best suited to provide support, e.g., Marketing and Communications vs MDN?</li>
+				<li>sldfj</li>
+			</ul-->
+		<br/><br/></p>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			
+			<div class="thumbnail">
+				<!--img src=""alt="Developer Journey"/-->
+				[ insert Phil's latest diagram here ]
+			</div>
+		</div>
+	</div>
+	
+	
+	

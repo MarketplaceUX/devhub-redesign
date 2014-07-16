@@ -1,0 +1,38 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: home_3.html
+multisequence: home_3
+---	
+
+<div class="container">
+	
+	<h1>Our Audience</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include homePagination.html %}
+	{% endif %}
+	
+	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+		<h3>Target Audience</h3>
+
+		<ol class="longText">
+			<li>Developers/Partners with existing Marketplace apps</li>
+			<li>Developers/Partners who are new to Marketplace apps</li>
+		</ol>
+		
+		<br/>
+
+		<h3>Additional Audiences</h3>
+		<p class="longText">Devhub landing pages should support these additional users. <i>"Support" here means that we will direct these users to the right sources of information (vs creating that content within devhub).</i></p>
+
+		<ol class="longText">
+			<li>Potential partners looking for information about Marketplace and/or about partnering with Mozilla</li>
+			<li>General public looking for information about Marketplace</li>
+		</ol>
+
+		<p class="longText" style="float:right;"><br/><a href="second_1.html">Next Section ></a></0>
+
+	</div>
+	
