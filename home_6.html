@@ -1,0 +1,54 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: project_6.html
+multisequence: six
+---	
+<!-- THIS PAGE IS HIDDEN AS OF 07/16/14. BRING IT BACK LATER IF NEEDED -->
+<div class="container">
+	<h1>Design Principles</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include homePagination.html %}
+	{% endif %}
+	
+	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+
+		<h3>General</h3>
+
+		<ul class="longText">
+
+			<li><b>Use sensible defaults.</b> Always default to the most common or simplest use case.</li>
+
+			<li><b>Hide complexity</b> from average users, but make it accessible for power users.</li>
+
+			<li><b>Use progressive disclosure</b> to show the right content in the right context at the right time.</li>
+
+			<li><b>Use branching options</b> to "funnel" the user from general choices to more specific ones, e.g., use "country selector" to minimize the number of payment providers to choose from.</li>
+
+			<li><b>Set expectations, and be transparent.</b> Every page has "instructions" that tell the user what to do and what to expect to happen on that page.</li>
+
+			<li><b>Provide "help" content</b> that helps developers make good/informed choices. Give brief "help" that summarizes the issue and point users to a deeper dive in MDN, if they want it.</li>
+
+			<li><b>Use clear/explicit language and tone</b>  - somewhere between the current language/tone and that used in our prototype.</li>
+
+			<li><b>Don't make me do it all in one sitting.</b> If there is a flow, let user "save and exit" to return later.</li>
+
+		</ul>
+		
+		<h3>Tactical</h3>
+
+		<ul class="longText">
+
+			<li><b>Support "testing" activities.</b> Create features/guidance that help developers get feedback (e.g., private apps) before "public" launch and advice on fine-tuning.</li>
+
+			<li><b>Provide checklists.</b> Wherever there is a list of stuff the developer must produce (or do), make a checklist available.</li>
+
+			<li><b>Don't re-invent the wheel on UI widgets.</b> Developers aren't interested in devhub's UI. Don't make them "think" about it by asking them to use a widget that's new for the sake of being new.</li>
+
+			<li><b>Content creation/management of apps is a desktop experience.</b> The vast majority of people prefer to fill out forms on the desktop where the keyboard is considerably larger and they have access to pointing devices. So we won't specifically design for a responsive experience.</li>
+
+		</ul>
+		
+	</div>
