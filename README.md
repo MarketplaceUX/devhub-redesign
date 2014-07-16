@@ -6,13 +6,9 @@ This branch is home to all the individual files used in the process of the redes
 The redesign documentation itself lives in the [gh-pages branch](https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/tree/gh-pages)
 
 ## Changelog
-07/16/2014: 
-* Removed (or hid) content not relevant to working on the 2 new concepts.
-
 05/19/2014: 
 * Added Changelog to master README. Changes to either branch will be noted here (with links to the affected pages or site areas).
 * Changed pdfs to inline images + removed open new window from some hrefs
-*
 
 
 
