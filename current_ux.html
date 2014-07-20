@@ -1,0 +1,104 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: current_ux.html
+multisequence: current_ux
+---	
+
+<div class="container">
+	
+	<h1>Current UX Work - week of 07/21/14</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include thirdPagination.html %}
+	{% endif %}
+
+	
+	<div class="col-lg-3 box-instruct" style="margin-bottom:24px;">
+	
+		<p class="longText"><b>How This Page Works</b>
+		</p>
+
+		<p class="longText">We'll update this page weekly as this project continues. As each week happens, we'll add new "Week of X" content to this page. Consider this page a running record of what we're currently working on.
+		</p>
+
+		<p class="longText"><b><span class="red">The latest conversation about the project will always be in the most recent Discussion Thread</b> (click Open Issues in the topnav).</span> Join in!
+		</p>
+	</div>
+	
+	
+
+	<!--div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-1" style="border:1px solid red;"-->
+
+	<div class="col-sm-6 col-md-6 col-lg-7 col-lg-offset-2">
+		
+		<h3 class="no-top">Week of 07/21/14</h3>
+
+		<p class="longText">We've completed baseline testing for developer understanding of the <b>current MDN App Manifest instructions</b>. You can find more details in the locations below. Topline findings:</p>
+		
+		<ol class="longText">
+			<li><b>Finding strategies</b>. As we would expect, some people skimmed the content looking for words they could pick out that matched their mental models, while others searched for the same thing. Less than 10% used the navigation (sidenav) to find content.</li>
+			
+			<li><b>File name + format</b>. Less than 10% named the file correctly as <code>manifest.webapp</code>. <i>This is likely to be a major source of manifest validation failure</i>.</li>
+
+			<li><b>Mental models</b>. Some of the language we use does not match people's mental models. E.g., people who searched for "translate" were unable to find the <code>locales</code> section.</li>
+
+			<li><b>Sample content</b>. Most people copy-pasted the MDN sample content. Many of them did not change the sample content after copying it. <i>This is likely to be a major source of manifest validation failure</i>.</li>
+
+		</ol> 
+
+		<p class="longText"><b>Test Data + Findings</b></p>
+
+		<ul class="longText">
+			<li><a href="https://docs.google.com/a/mozilla.com/document/d/1yDLOxYnPdkVIszCv5ep49uCfWHCK6pGrSWjSCv1jGEI/edit#heading=h.kqqidg1th6bl">Test #3 Observations</a></li>
+			<li><a href="https://docs.google.com/a/mozilla.com/spreadsheets/d/1zhcTOofmKh42RJNG00ia2RJa3469EazIrkqq1APPGME/edit#gid=0">Test #3 Raw Data</a></li>
+			<li><a href="https://docs.google.com/a/mozilla.com/document/d/1uNWd1JGreobxFOsXb1ZN2oaLl72eMY0PJQuw3XGfxLk">Preliminary Recommendations</a> <b>Note</b>: These are preliminary, not final. We used them to re-write the MDN instructions for our next test.</li>
+		</ul>
+
+		<p class="longText">We are currently running a test with revised MDN instructions to determine if better instructions lead to better results. We're also beginning tests on the <code>config</code> file that's part of both new concepts. We'll post the results as they come in.
+		</p>
+
+
+
+		<br/><h3>Week of 07/14/14</h3>
+
+		<p class="longText">Both of our concepts require the developer to complete the App Manifest offline using his local environment and tools. It's critical that the instructions for completeing the App Manifest are correct, clear, and well written. The instructions must also be presented in ways that make it easy for readers (developers) to quickly find and understand information within the instructions.
+		</p>
+
+		<p class="longText">We ran a series of tests to answer the following question:
+		</p>
+			<ol class="longText">
+				
+				<li>What difference does content make? For this question, we'll rewrite the App Manifest instructions on App Center to see if clearer/more concise content improves developers' ability to create a succesful App Manifest.<!-- We're also interested here in which information design tactics of the App Center page lead to the best results (App Manifest file that validates).--></li>
+				
+				<!--li>What difference does format make? For this question, we'll test several methods of presenting the instructions to see what impact each has on developers' ability to submit a succesfull App Manifest.</li-->
+
+			</ol>
+
+
+		
+		<br/><h3>Week of 06/23/14</h3>
+
+		<p class="longText">Following team discussions and conversations with people at App Days, we've decided to pursue two concepts in more detail:
+		</p>
+			<ul class="longText">
+				
+				<li><a href="concept_dropoff.html">Devhub as a concierge/dropoff service</a></li>
+				
+				<li><a href="concept_remoterepo.html">Devhub as a remote repository</a></li>
+
+			</ul>
+		
+		
+		<!-- section navigation here -->
+		<p class="longText">In the next few weeks, we'll be doing some user testing to identify areas of focus for each concept.
+		</p>
+
+		
+		<!-- LEAVE THESE BRs HERE TO PROVIDE MORE BREATHING ROOM AT BOTTOM -->
+		<br/><br/>
+
+
+	</div>
+	

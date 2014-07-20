@@ -27,6 +27,7 @@
 
 <!-- This part deals with disabled state of the FORWARD arrow. Disabled state is for the LAST page of the multi pages. -->
 {% if page.multiURL == "home_3.html" %}
+	<!--li class="disabled"><a href="#">&raquo;</a></li-->
 	<li class="disabled"><a href="#">&raquo;</a></li>
 
 <!--  This part deals with the enabled state of the FORWARD arrow. The LAST page is not included in this section b/c its included in the DISABLED state above.  REMEMBER that the FORWARD arrow links to NEXT page URLs. -->
@@ -35,7 +36,7 @@
 		{% if page.multisequence == 'home_1' %}
 			<a href="home_2.html">
 		{% elsif page.multisequence == 'home_2' %}
-			<a href="home_3.html">				
+			<a href="home_3.html">			
 		{% endif %}
 		&raquo;</a>
 	</li>
