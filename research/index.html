@@ -4,14 +4,10 @@ multipage: false
 ---	
 
 <div class="container">
-	<h1>User Research</h1>
 
-	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
-	{% if page.multipage %}
-		{% include homePagination.html %}
-	{% endif %}
-
-	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+  <div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5">
+  
+  	<h1>User Research</h1>
 	
 	  <p class="longText">To get access to the research videos, please email <a href="mailto:bram@mozilla.com" rel="nofollow">bram@mozilla.com</a>
 	
@@ -172,6 +168,11 @@ multipage: false
 	    <li><a href="https://docs.google.com/a/mozilla.com/spreadsheets/d/172GmDixYrvmK3Twyk9JOYxT5-woDIl26JB9vdrRhujc/edit">Test #2 Raw Data</a></li>
 	    <li><a href="https://docs.google.com/a/mozilla.com/document/d/19Lg4GWAtOELSEi3zpAlDEZbmOCC5t82wGmSc4Sl383Q/edit">Test #2 Observations</a></li>
 	  </ul>
+	  
+    <!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+  	{% if page.multipage %}
+  		{% include homePagination.html %}
+  	{% endif %}
 		
 	</div>
 	
