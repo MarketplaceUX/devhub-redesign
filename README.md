@@ -15,7 +15,6 @@ If you'd like to actively participate in the design process, please document you
 05/19/2014: 
 * Added Changelog to master README. Changes to either branch will be noted here (with links to the affected pages or site areas).
 * Changed pdfs to inline images + removed open new window from some hrefs
-*
 
 ### Making New Pages
 This site is using Jekyll to ease the burden of updating shared components (like the top navigation area). Because of this you need to know where to edit specific parts of pages. 
@@ -29,3 +28,16 @@ This site is using Jekyll to ease the burden of updating shared components (like
   * everything else: named for the page title (e.g. designPrinciples.html)
 
 This is all still a work in progress so if you find a bug in it or come up with a better way to do any of this just let us all know and we can evolve the process. The goal of this hosting method is to allow the team to focus on creating content instead of presentation pages. 
+=======
+
+
+
+## Working Files Folders in the branch
+
+#### [Experience Design documents][1]
+
+This file will be split so functionalities don’t overlap and they’re easier to critique.
+
+
+[1]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/tree/master/Experience_Docs/index.md
+
