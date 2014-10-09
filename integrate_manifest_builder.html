@@ -1,0 +1,585 @@
+---
+layout: MarketplaceUXSpec
+multipage: false
+multiURL: integrate_manifest_builder.html
+multisequence: current_ux
+---	
+
+<div class="container">
+	
+	<h1>Short-term integration of Manifest Builder</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include thirdPagination.html %}
+	{% endif %}
+
+
+	<div class="col-sm-3 col-md-3 col-lg-3">
+		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
+			<li><a href="#goals">Goals + Requirements</a></li>
+			<li><a href="#flow">User Flow</a></li>
+			<li><a href="#submitapp">Submit an App</a></li>
+			<li><a href="#validateapp">Validate an App</a></li>
+			<li><a href="#tools">Tools (new page)</a></li>
+			<li><a href="#mb_nav">Manifest Builder - General</a></li>
+				<ul>
+					<li><a href="#mb_nav">Navigation</a></li>
+					<li><a href="#mb_help">Help Panel</a></li>
+					<li><a href="#mb_accordion">Accordion Behavior</a></li>
+					<li><a href="#mb_data">Data Persistence</a></li>
+					<li><a href="#mb_errors">Required Field Errors</a></li>
+					<li><a href="#mb_inline">Inline Field Validation</a></li>
+					<li><a href="#mb_counters">Character Counters</a></li>
+				</ul>
+			</li>
+			<li><a href="#mb_step_1">Manifest Builder - Steps</a></li>
+				<ul>
+					<li><a href="#mb_step_1">Step 1</a></li>
+					<li><a href="#mb_step_2">Step 2</a></li>
+					<li><a href="#mb_step_3">Step 3</a></li>
+					<li><a href="#mb_step_4">Step 4</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	
+	<div class="col-sm-9 col-md-9 col-lg-8">
+	
+		<div class="hiddenAnchor" id="goals"></div>
+		<h3 class="no-top">Goals + Requirements</h3>
+
+		<p class="longText"><b>The purpose of this project is to</b>
+			<ul class="longText">
+  			<li>Integrate the Manifest Builder into the Devhub area.</li>
+
+  			<li>Intercept developers as they submit an app and encourage them either to create a manifest file or to validate an existing manifest file.
+  			</li>
+			</ul>
+    </p>
+    <p class="longText"><b>Requirements:</b>
+  		<ul class="longText">
+  			<li>Developers should have a quick/easy way to get to the Manifest Builder from the Submit App flow.</li>
+
+  			<li>Developers should have a quick/easy way to get to the App Validator from the Submit App flow.</li>
+
+  			<li>Developers should have a central page inside Devhub from which to access developer tools</li>
+
+  			<li>Developers must be logged in to access and use the Manifest Builder.</li>
+
+  			<li>Developers can create a new manifest file using the Manifest Builder.</li>
+
+  			<li>Developers can import (and then edit) an existing manifest file using the Manifest Builder.</li>
+
+  			<li>Developers can download the generated manifest file for use as they see fit, for example, to test their app or to include in an app submission.</li>
+  		</ul>
+    </p>
+    <p class="longText"><b><a href="http://6hub2l.axshare.com"><span class="red">See the short-term prototype for the Manifest Builder.</span></a></b>
+    	<ul class="longText">
+    		<li>The Manifest Builder prototype was developed for the longer-term Devhub project. It has been modified to work for this shorter-term project. So you will see differences between it and the prototype for the longer-term project.</li>
+    		<li class="red">Note that this document will be the source of truth for content/copy for the shorter-term project. Anything here supercedes the content/copy in the short-term prototype.</li>
+    	</ul>
+		</p>
+
+
+		<br/>
+		<div class="hiddenAnchor" id="flow"></div>
+		<h3>User Flow</h3>
+
+		<p class="longText">
+			<img src="img/flow_integrate_manifest_builder.jpg" alt="User Flow - Submit/Validate App"/>
+    </p>
+
+
+    <br/>
+		<div class="hiddenAnchor" id="submitapp"></div>
+		<h3>Submit an App - Hosted</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_submitapp_1.jpg" alt="Submit Hosted App"/>
+    </p>
+    <p class="longText">
+    	Current URL: <a href="https://marketplace.firefox.com/developers/submit">https://marketplace.firefox.com/developers/submit</a>
+    	<br/>
+    	We want to intercept developers here to either create a manifest file or validate it.
+  	</p>
+    <ol class="longText">
+    	<li><b>Create Manifest.</b> First link goes to Manifest Builder. Second link go to MDN App Manifest page.</li>
+
+    	<li><b>Validate Manifest.</b> Clicking goes to the App Validator (Validate App).</li>
+    </ol>
+
+
+    <br/>
+    <h3>Submit an App - Packaged</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_submitapp_2.jpg" alt="Submit Packaged App"/>
+    </p>
+    <p class="longText">
+    	Current URL: <a href="https://marketplace.firefox.com/developers/submit">https://marketplace.firefox.com/developers/submit</a>
+    	<br/>
+    	We want to intercept developers here to either create a manifest file or validate it.
+  	</p>
+    <ol class="longText">
+    	<li><b>Create Manifest.</b> Same as for Packaged.</li>
+
+    	<li><b>Validate Manifest.</b> Same as for Packaged.</li>
+    </ol>
+
+
+    <br/>
+		<div class="hiddenAnchor" id="validateapp"></div>
+		<h3>Validate an App</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_validateapp.jpg" alt="Validate an App"/>
+    </p>
+    <p class="longText">
+    	Current URL: <a href="https://marketplace.firefox.com/developers/validator">https://marketplace.firefox.com/developers/validator</a>
+    	<br/>
+    	For reference only - no changes to this page.
+  	</p>
+
+
+  	<br/>
+  	<div class="hiddenAnchor" id="tools"></div>
+    <h3>Tools (new page)</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_tools.jpg" alt="Tools"/>
+    </p>
+    <p class="longText">
+    	This is a new page within Devhub that will provide links to developer tools and/or content about developer tools.
+  	</p>
+    <ol class="longText">
+    	<li><b>New Nav Item.</b> Add new nav item -- Tools. Links to this new Tools page.</li>
+
+    	<li><b>Links to Tools.</b> Provide links to web-based tools and/or information about other tools like WebIDE.</li>
+
+    	<li><b>Link to Manifest Builder.</b> Goes to Manifest Builder.</li>
+    </ol>
+
+
+    <br/>
+  	<div class="hiddenAnchor" id="mb_nav"></div>
+    <h3>Manifest Builder - Navigation</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_nav.jpg" alt="Navigation"/>
+    </p>
+    <p class="longText">
+    	This is a new page within Devhub that will provide links to developer tools and/or content about developer tools.
+  	</p>
+    <ol class="longText">
+    	<li><b>Breadcrumb.</b> Manifest Builder lives in the Tools area, so this is the breadcrumb.</li>
+
+    	<li><b>Step X of Y.</b> Display Page X of Y on all Manifest Builder pages.</li>
+
+    	<li><b>Skip Step.</b> User can skip Step 2 and Step 3 (because all fields are optional). Clicking advances to the next step of Manifest Builder.
+    		<p style="margin-top:.5em;">This option is not available on Step 1.</p>
+    	</li>
+
+    	<li><b>Previous Step.</b> Click to return to previous step. Returning to previous step displays all selections and data entered that user had previously made on that page.
+    		<p style="margin-top:.5em;">Note that this option is not available on Step 1.</p>
+    	</li>
+
+    	<li><b>Cancel.</b> Click "Cancel" to return to the page from which developer invoked Manifest Builder. Clears all data entered into Manifest Builder.</li>
+
+    	<li><b>Next Step.</b> Click to advance to next step of Manifest Builder.
+    		<p style="margin-top:.5em;">Note that this option is not available on Step 4.</p>
+    		<p>With the exception of Step 1, user can complete all, some, or none of the fields. So advancing has no error conditions - except for Step 1.</p>
+    		<p><b>On Step 1:</b> all fields must be completed in order to advance. If a field is not completed, open the accordian and return error (see Required Field Errors).</p>
+    	</li>
+
+    </ol>
+
+
+    <br/>
+  	<div class="hiddenAnchor" id="mb_help"></div>
+    <h3>Manifest Builder - Help Panel Open</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_help_1.jpg" alt="Help Panel - Open"/>
+    </p>
+    <p class="longText">
+    	This is a new page within Devhub that will provide links to developer tools and/or content about developer tools.
+  	</p>
+    <ol class="longText">
+    	<li><b>	Help Panel.</b> On each page, Help panel is open by default. 
+    		<p style="margin-top:.5em;">Click to close (see Help Panel - Closed below).</p>
+    		<p>This panel works same way on all Manifest Builder pages (though content differs per page).</p>
+    	</li>
+    </ol>
+
+    <br/>
+  	<h3>Manifest Builder - Help Panel Closed</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_help_2.jpg" alt="Help Panel - Closed"/>
+    </p>
+    <ol class="longText" start="2">
+    	<li><b>Help Closed.</b> Showing Help in closed state. Click "open" to re-open the Help panel.</li>
+    </ol>
+
+
+    <br/>
+  	<div class="hiddenAnchor" id="mb_accordion"></div>
+    <h3>Manifest Builder - Accordion Behavior</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_accordion_1.jpg" alt="Accordions"/>
+    </p>
+    <ol class="longText">
+    	<li><b>	Accordions.</b> Accordions are closed on page load for all Manifest Builder pages.
+    		<p style="margin-top:.5em;">Throughout the Manifest Builder, only one accordion can be open at a time.</p>
+    		<p>When one is clicked, it opens the requested accordion and closes any other open accordion.</p>
+    		<p>The only exception to this rule happens on Step 1, if user tries to advance without completing 1 or more required fields. In this case, open all the offending accordions and show errors as described in Required Field Errors.</p>
+    	</li>
+    	<li><b>External Links.</b> See External Links below</li>
+    </ol>
+
+
+    <br/>
+    <h3>Manifest Builder - External Links</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_accordion_2.jpg" alt="Links"/>
+    </p>
+    <ol class="longText" start="2">
+    	<li><b>External Links.</b> Throughout the Manifest Builder, content will contain links to MDN (and other external) content.
+    		<p style="margin-top:.5em;">For MDN links, clicking should open appropriate page and jump to requested content, e.g., "title" on the MDN App Manifest page.</p>
+    		<p class="red">Consider launching these in a new tab/window, so user keeps his place in the Manifest Builder.</p>
+    	</li>
+    </ol>
+
+
+    <br/>
+  	<div class="hiddenAnchor" id="mb_data"></div>
+    <h3>Manifest Builder - Data Persistence</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_data.jpg" alt="Data"/>
+    </p>
+    <ol class="longText">
+    	<li><b>Data Persistence.</b> Entered data should be persisted across pages.
+    		<p style="margin-top:.5em;">E.g., if user advances to next step, and then returns to a previous step, data in the accordions should be filled with the previously entered data.</p>
+    		<p class="red">It is potentially desirable to persist data if user leaves Devhub and returns tomorrow. Let’s discuss.</p>
+    	</li>
+    </ol>
+
+
+    <br/>
+  	<div class="hiddenAnchor" id="mb_errors"></div>
+    <h3>Manifest Builder - Required Field Errors</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_errors.jpg" alt="Required Field Errors"/>
+    </p>
+    <p class="longText">Required Field Errors only occur on Step 1, as this step is the only one with required fields. User cannot advance unless all fields are completed.</p>
+    <ol class="longText">
+    	<li><b>General Error Message.</b> Display general error message at top of page.</li>
+
+    	<li><b>Field Error Indicators.</b> Open all the accordions that contain errors.
+    		<p style="margin-top:.5em;">Display field label in bold red.</p>
+    		<p>Display error message in regular red below field.</p>
+    	</li>
+    </ol>
+
+
+    <br/>
+  	<div class="hiddenAnchor" id="mb_inline"></div>
+    <h3>Manifest Builder - Inline Field Validation</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_inline.jpg" alt="Inline Field Validation"/>
+    </p>
+    <p class="longText">Inline field validation is used to confirm that user is submitting correctly formatted data.</p>
+    <ol class="longText">
+    	<li><b>Field Validation.</b> After user enters data, check Validation Rules.
+    		<p style="margin-top:.5em;">If invalid, display field label in bold red and display validation message in regular red beneath the field.</p>
+    		<p>Validation Rules are being finalized now. See this document:
+    			<br/><a href="https://docs.google.com/a/mozilla.com/spreadsheets/d/1f2yexSDm-XjSdz5B5KJmcBwLCA-c8tlebAaRgaGwKMk">https://docs.google.com/a/mozilla.com/spreadsheets/d/1f2yexSDm-XjSdz5B5KJmcBwLCA-c8tlebAaRgaGwKMk</a></p>
+    	</li>
+    </ol> 
+
+
+    <br/>
+  	<div class="hiddenAnchor" id="mb_counters"></div>
+    <h3>Manifest Builder - Character Counter - Start</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_counters_1.jpg" alt="Character Counters"/>
+    </p>
+    <p class="longText">Use character counters where field has a defined max length per Validation Rules</p>
+    <ol class="longText">
+    	<li><b>Character Counter.</b> Count down from defined max length. 
+    		<p style="margin-top:.5em;">Allow user to exceed the max length, so that user can copy-paste content into these fields and then edit it down.</p>
+    		<p>When counter gets to negative numbers, display as in Character Counter - Negative below</p>
+    	</li>
+    </ol>
+
+    <br/>
+  	<h3>Manifest Builder - Character Counter - Negative</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_counters_2.jpg" alt="Character Counters - Negative"/>
+    </p>
+    <ol class="longText" start="2">
+    	<li><b>Negative Character Count.</b> Showing negative counter example.
+    	</li>
+    </ol> 
+
+
+    <br/>
+  	<div class="hiddenAnchor" id="mb_step_1"></div>
+    <h3>Manifest Builder - Step 1 - Default</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_1_pkgd.jpg" alt="Step 1 - Default"/>
+    </p>
+    <p class="longText">On page load, defaul to "Packaged App" as Delivery Method.</p>
+    <ol class="longText">
+    	<li><b>Help Content.</b> Include link to App Submission Checklist (content being developed). Click to open Checklist in a layer.</li>
+    	<li><b>Existing Manifest.</b> Click "browse" to browse locally for an existing manifest file. See <a href="#mb_step_1_imported">Imported Manifest</a>.</li>
+    	<li><b>App Delivery Method.</b> Default is Packaged App. See <a href="#mb_step_1_hosted">Step 1 - Hosted</a> for example of Hosted App.</li>
+    	<li><b>Plan to Translate.</b> Default is unchecked. 
+    		<p style="margin-top:.5em;">If checked, user will be able to add translated strings on Step 2.</p>
+    	</li>
+    	<li><b>Step 1 Fields.</b> See <a href="#mb_step_1_fields">Step 1 Fields</a> for details.</li>
+    </ol>
+
+
+		<br/>
+		<div class="hiddenAnchor" id="mb_step_1_hosted"></div>
+  	<h3>Manifest Builder - Step 1 - Hosted</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_1_hosted.jpg" alt="Step 1 - Hosted"/>
+    </p>
+    <ol class="longText" start="5">
+    	<li><b>Hosted App.</b> Showing hosted selected. 
+    		<p style="margin-top:.5em;">Note that choosing "Hosted" removes the "App Launch Path for Packaged Apps" accordian from this step.</p>
+    	</li>
+    </ol> 
+
+
+    <br/>
+    <div class="hiddenAnchor" id="mb_step_1_imported"></div>
+  	<h3>Manifest Builder - Step 1 - Imported Manifest</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_1_imported.jpg" alt="Step 1 - Imported"/>
+    </p>
+    <ol class="longText">
+    	<li><b>Manifest Imported Confirmation Message.</b> Display confirmation message when app manifest file has been imported.</li>
+    	<li><b>Import Path.</b> Showing that user has imported an existing app manifest file.
+    		<p style="margin-top:.5em;">The system populates the Manifest Builder fields with the data from the imported file. See, for example, the App Title and App Description fields shown here.</p>
+    	</li>
+    </ol> 
+
+
+    <br/>
+    <div class="hiddenAnchor" id="mb_step_1_fields"></div>
+  	<h3>Manifest Builder - Step 1 - Fields</h3>
+  	
+  	<p class="longText"><a href="https://docs.google.com/a/mozilla.com/spreadsheets/d/1f2yexSDm-XjSdz5B5KJmcBwLCA-c8tlebAaRgaGwKMk/edit#gid=0">See this doc</a> for more details on each field, including how Manifest Builder fields translate into manifest file fields.</p>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_1_title.jpg" alt="Step 1 - Title + Description"/>
+    </p> 
+
+    <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_1_devname.jpg" alt="Step 1 - Developer Name"/>
+    </p> 
+
+   <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_1_icons.jpg" alt="Step 1 - App Icon"/>
+    </p>
+    <ol class="longText">
+    	<p><b>App Icon.</b> Each "icon set" consists of a dropdown selection, an input field, and an "add more" button.</p>
+  		<p>After completing one icon set, user can display another empty icon set by clicking the button.</p>
+  		<p>User will be able to delete a previously entered icon set.</p>
+  	</ol>
+
+     <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_1_launch.jpg" alt="Step 1 - Launch Path"/>
+    </p>
+    <ol class="longText">
+    	<p><b>App Launch Path for Packaged Apps.</b> Display only if Packaged App is selected as Delivery Method.
+    	</p>
+    </ol> 
+
+    
+    <br/>
+  	<div class="hiddenAnchor" id="mb_step_2"></div>
+    <h3>Manifest Builder - Step 2</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2.jpg" alt="Step 2"/>
+    </p>
+    
+    <ol class="longText">
+    	<li><b>Help Content.</b> This is the Help content for Step 2.</li>
+    	<li><b>Step 2 Fields.</b> See <a href="#mb_step_2_fields">Step 2 Fields</a> for details.</li>
+    </ol>
+
+
+    <br/>
+    <div class="hiddenAnchor" id="mb_step_2_fields"></div>
+  	<h3>Manifest Builder - Step 2 - Fields</h3>
+  	
+  	<p class="longText"><a href="https://docs.google.com/a/mozilla.com/spreadsheets/d/1f2yexSDm-XjSdz5B5KJmcBwLCA-c8tlebAaRgaGwKMk/edit#gid=0">See this doc</a> for more details on each field, including how Manifest Builder fields translate into manifest file fields.</p>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2_devurl.jpg" alt="Step 2 - Developer Website"/>
+    </p>
+
+    <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2_version.jpg" alt="Step 2 - App Version"/>
+    </p>
+
+    <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2_perms.jpg" alt="Step 2 - App Permissions"/>
+    </p>
+    <ol class="longText">
+    	<p><b>App Permissions.</b> This interface is TBD - in progress.</p>
+    	<p>If "hosted" is selected as the Delivery Method, display only permissions relevant to Hosted Apps.</p>
+    	<p>If "packaged" is selected as the Delivery Method, display all available permissions.</p>
+  	</ol>
+
+    <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2_orient.jpg" alt="Step 2 - App Orientation"/>
+    </p> 
+
+    <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2_chrome.jpg" alt="Step 2 - Chrome"/>
+    </p>
+
+    <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2_fullscreen.jpg" alt="Step 2 - Fullscreen"/>
+    </p>
+
+    <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2_launch.jpg" alt="Step 2 - App Launch Path for Hosted Apps"/>
+    </p>
+    <ol class="longText">
+    	<p><b>App Launch Path for Hosted Apps.</b> Display only if Hosted App is selected as Delivery Method.</p>
+  	</ol>
+
+  	<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2_trans.jpg" alt="Step 2 - App Translations"/>
+    </p>
+    <ol class="longText">
+    	<p><b>App Translations.</b> This interface is TBD - in progress.</p>
+    	<p>Display only if Plan to Translate is checked on Step 1.</p>
+    	<p>Choose Default Language (converted into language code by system) and then complete a "locale set" for each language user wants to translate into.</p>
+    	<p>Each locale set consists of a dropdown selection (converted into language code by system), a set of 6 input fields, and an "add more" button.</p>
+    	<p>After completing one locale set, user can display another empty locale set by clicking the button.</p>
+    	<p>User will be able to delete a previously entered locale set.</p>
+  	</ol>
+
+    <p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_2_origin.jpg" alt="Step 2 - Origin for Privileged Apps"/>
+    </p>
+    <ol class="longText">
+    	<p><b>Origin for Privileged Apps.</b> Display only if Packaged App is selected as the Delivery Method <b>AND</b> at least one Privileged Permission is selected on Step 2.</p>
+  	</ol>
+
+
+  	<br/>
+  	<div class="hiddenAnchor" id="mb_step_3"></div>
+    <h3>Manifest Builder - Step 3</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_3.jpg" alt="Step 3"/>
+    </p>
+    
+    <ol class="longText">
+    	<li><b>Help Content.</b> This is the Help content for Step 3.</li>
+    	<li><b>Step 3 Fields.</b> See <a href="#mb_step_3_fields">Step 3 Fields</a> for details.</li>
+    </ol>
+
+
+    <br/>
+    <div class="hiddenAnchor" id="mb_step_3_fields"></div>
+  	<h3>Manifest Builder - Step 3 - Fields</h3>
+  	
+  	<p class="longText"><a href="https://docs.google.com/a/mozilla.com/spreadsheets/d/1f2yexSDm-XjSdz5B5KJmcBwLCA-c8tlebAaRgaGwKMk/edit#gid=0">See this doc</a> for more details on each field, including how Manifest Builder fields translate into manifest file fields.</p>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_3_acts.jpg" alt="Step 3 - Web Activities"/>
+    </p>
+    <ol class="longText">
+    	<p><b>Web Activities.</b> This interface is TBD - in progress.</p>
+  	</ol>
+
+  	<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_3_msgs.jpg" alt="Step 3 - Messages"/>
+    </p>
+    <ol class="longText">
+    	<p><b>Messages.</b> This interface is TBD - in progress.</p>
+  	</ol>
+
+  	<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_3_precompile.jpg" alt="Step 3 - Precompile"/>
+    </p>
+    <ol class="longText">
+    	<p><b>Precompile asm.js.</b> This interface is TBD - in progress.</p>
+  	</ol>
+
+  	<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_3_installs.jpg" alt="Step 3 - Installs Allowed From"/>
+    </p>
+    <ol class="longText">
+    	<p><b>Installs Allowed From.</b> This interface is TBD - in progress.</p>
+  	</ol>
+
+  	<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_3_csp.jpg" alt="Step 3 - CSP"/>
+    </p>
+    <ol class="longText">
+    	<p><b>Content Security Policy.</b> This interface is TBD - in progress.</p>
+  	</ol>
+
+  	<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_3_cache.jpg" alt="Step 3 - Path to Appcache"/>
+    </p>
+    <ol class="longText">
+    	<p><b>Path to AppCache.</b> Display only if Hosted App is selected as the Delivery Method.</p>
+  	</ol>
+
+  	<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_3_redirects.jpg" alt="Step 3 - Redirects"/>
+    </p>
+    <ol class="longText">
+    	<p><b>App Redirects.</b> Display only if Packaged App is selected as the Delivery Method <b>AND</b> at least one Privileged Permission is selected on Step 2. </p>
+  	</ol>
+
+
+  	<br/>
+  	<div class="hiddenAnchor" id="mb_step_4"></div>
+    <h3>Manifest Builder - Step 4</h3>
+
+		<p class="longText">
+			<img src="img/devhub_integrate_manBuilder_mb_step_4.jpg" alt="Step 4"/>
+    </p>
+    
+    <ol class="longText">
+    	<li><b>Ready message.</b> Display the App Title in this ready message.</li>
+    	<li><b>Help Content.</b> "Follow instructions" and "Review App Submission instructions" go to <a href="https://developer.mozilla.org/en-US/Marketplace/Publishing/Introduction">this MDN page</a>. Validate App link goes to <a href="https://marketplace.firefox.com/developers/validator">App Validator</a>.</li>
+    	<li><b>Start Over.</b> Clears all entered data and returns user to Step 1.</li>
+    	<li><b>Save Changes.</b> User can edit the generated manifest on this page (see #6). When done editing, user clicks "Save Changes."</li>
+    	<li><b>Download Manifest.</b> User can download the generated (or saved) manifest as a JSON file.</li>
+    	<li><b>Edit Area.</b> Clicking into and making a change in this area disables the Download Manifest button. User then clicks "Save Changes," which re-enables the Download Manifest button.</li>
+    </ol>
+
+
+		
+		<!-- LEAVE THESE BRs HERE TO PROVIDE MORE BREATHING ROOM AT BOTTOM -->
+		<br/><br/>
+
+
+	</div>
+	
