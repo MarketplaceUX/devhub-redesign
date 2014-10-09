@@ -110,3 +110,33 @@ footer p{
 	padding-left: 5px;
 	font-size: .9em;
 }
+
+.secondaryMenu{
+	list-style: none;
+	border-top: 1px solid #D7D7D7;
+	border-bottom: 1px solid #D7D7D7;
+	padding-top: 0.5em;
+	padding-bottom: 1.3em;
+	padding-left: 1.5em;
+}
+.secondaryMenu li a{
+	font-size: 1.15em;
+	line-height: 1.6em;
+	display:block;
+	width:100%;
+	text-decoration: none;
+}
+.secondaryMenu li a:focus, .secondaryMenu li a:hover {
+
+	border-right: 3px solid #428bca;
+	border-bottom:1px solid rgba(66,139,202,0.2);
+}
+.affix{
+	margin-top:3em;
+}
+
+.hiddenAnchor{
+	visibility: hidden;
+	position:relative;
+	top:-70px;
+}
