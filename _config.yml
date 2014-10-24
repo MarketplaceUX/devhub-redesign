@@ -1,7 +1,7 @@
 # Site settings
-name: Firefox Marketplace Devpages Redesign Spec
-title: Firefox Marketplace Devpages Redesign Spec
-email: tsmuse@mozilla.com
+name: Firefox Marketplace DevHub Redesign Spec
+title: Firefox Marketplace DevHub Redesign Spec
+email: ehunt@mozilla.com
 description: "Specifications for the eventual redesign of the Firefox Marketplace Developer Pages (devhub)"
 # these need to be changed for each project
 baseurl: "/devhub-redesign" #this is the github project name WITHOUT the trailing /
