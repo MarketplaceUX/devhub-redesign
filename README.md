@@ -3,7 +3,7 @@
 ## Description
 These are the files that make up the current design document for the Firefox Marketplace Developer pages redesign project. This document is currently a "living document" and all the concepts, features, stories, designs, etc are currently subject to change and open to feedback and contribution. If you see something you'd like to discuss, please file an Issue against it to start the conversation with the team.   
 
-To view the document visit http://tsmuse.github.io/FirefoxMarketplaceDevPagesDesign/ All the supporting files used to create the content for this document are available in the master branch of this project. 
+To view the document visit http://marketplaceux.github.io/devhub-redesign/ All the supporting files used to create the content for this document are available in the master branch of this project. 
 
 ## How to Contribute
 If you'd like to actively participate in the design process, please document your work in the site hosted here. Making a fork of this repo and then submitting pull requests is the best way to get new pages added. 
@@ -39,5 +39,5 @@ This is all still a work in progress so if you find a bug in it or come up with 
 This file will be split so functionalities don’t overlap and they’re easier to critique.
 
 
-[1]: https://github.com/tsmuse/FirefoxMarketplaceDevPagesDesign/tree/master/Experience_Docs/index.md
+[1]: https://github.com/marketplaceux/devhub-redesign/tree/master/Experience_Docs/index.md
 
