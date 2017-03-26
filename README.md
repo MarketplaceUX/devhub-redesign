@@ -1,3 +1,5 @@
+# As of 2016, this site is no longer being updated or maintained by the Mozilla Marketplace team.
+
 # Firefox Marketplace Developer Site Redesign
 
 To view the actual design documentation please visit the site at: http://marketplaceux.github.io/devhub-redesign/
